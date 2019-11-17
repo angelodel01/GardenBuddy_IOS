@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		E87176CE2346D7C400332056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87176CC2346D7C400332056 /* LaunchScreen.storyboard */; };
 		E87176D92346D7C400332056 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87176D82346D7C400332056 /* HelloWorldTests.swift */; };
 		E87176E42346D7C400332056 /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87176E32346D7C400332056 /* HelloWorldUITests.swift */; };
+		E8BB9495238211B50062A77F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BB9494238211B50062A77F /* awsconfiguration.json */; };
+		E8BB9496238211B50062A77F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BB9494238211B50062A77F /* awsconfiguration.json */; };
+		E8BB9497238211B50062A77F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BB9494238211B50062A77F /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,7 @@
 		E87176DF2346D7C400332056 /* GardenBuddyV1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GardenBuddyV1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87176E32346D7C400332056 /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		E87176E52346D7C400332056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BB9494238211B50062A77F /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		F73BAC1C21E257DEE7DAC028 /* Pods-GardenBuddyV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GardenBuddyV1.release.xcconfig"; path = "Target Support Files/Pods-GardenBuddyV1/Pods-GardenBuddyV1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +115,6 @@
 				411FF7B751B099F1638ACFA8 /* Pods-GardenBuddyV1Tests.debug.xcconfig */,
 				CF95EBD6DEBDA348D4E9E81F /* Pods-GardenBuddyV1Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +143,7 @@
 		E87176C02346D7C200332056 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				E8BB9494238211B50062A77F /* awsconfiguration.json */,
 				E87176C12346D7C200332056 /* AppDelegate.swift */,
 				E87176C32346D7C200332056 /* SceneDelegate.swift */,
 				E87176C52346D7C200332056 /* ContentView.swift */,
@@ -286,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BB9495238211B50062A77F /* awsconfiguration.json in Resources */,
 				E87176CE2346D7C400332056 /* LaunchScreen.storyboard in Resources */,
 				E87176CB2346D7C400332056 /* Preview Assets.xcassets in Resources */,
 				E87176C82346D7C400332056 /* Assets.xcassets in Resources */,
@@ -296,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BB9496238211B50062A77F /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BB9497238211B50062A77F /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
