@@ -1,0 +1,6 @@
+framework module Pods_GardenBuddyV1 {
+  umbrella header "Pods-GardenBuddyV1-umbrella.h"
+
+  export *
+  module * { export * }
+}

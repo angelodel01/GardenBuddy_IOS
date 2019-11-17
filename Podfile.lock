@@ -1,0 +1,24 @@
+PODS:
+  - AWSAuthCore (2.6.35):
+    - AWSCore (= 2.6.35)
+  - AWSCore (2.6.35)
+  - AWSMobileClient (2.6.35):
+    - AWSAuthCore (= 2.6.35)
+
+DEPENDENCIES:
+  - AWSMobileClient (~> 2.6.13)
+
+SPEC REPOS:
+  trunk:
+    - AWSAuthCore
+    - AWSCore
+    - AWSMobileClient
+
+SPEC CHECKSUMS:
+  AWSAuthCore: 386e045a341acebf2409425467e907ae1a45ed63
+  AWSCore: 2dab62ef2e5ca5d8c72c6cbdb3a6ea1532c27c2b
+  AWSMobileClient: f89a36e0d95fc354a9d3b50d347371788c542449
+
+PODFILE CHECKSUM: 02ed8ad5b4092d3097fe74bafa3ab9f3f79e1a72
+
+COCOAPODS: 1.8.4
