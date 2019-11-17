@@ -10,7 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World how are you")
+//        Text("Hello World how are you");
+        Button(action: {
+            // your action here
+            print("button clicked");
+        }) {
+            Text("Button title");
+        }
+
     }
 }
 
