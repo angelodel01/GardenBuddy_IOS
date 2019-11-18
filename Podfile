@@ -9,7 +9,8 @@ target 'GardenBuddyV1' do
 
   # target 'GardenBuddyV1' do
       # use_frameworks!
-      pod 'AWSMobileClient', '~> 2.6.13'
+  pod 'AWSMobileClient', '~> 2.6.13'
+  pod 'AWSDynamoDB', '~> 2.6.13'
       # other pods
   # end
 

@@ -8,8 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2658294205AAA7AFA591C295 /* Pods_GardenBuddyV1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D46AF9ECE9B8097C2BD12FA /* Pods_GardenBuddyV1Tests.framework */; };
-		2855585D4FACBE73B0D3CDFC /* Pods_GardenBuddyV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D226EA9FEF6CE69E611A4F36 /* Pods_GardenBuddyV1.framework */; };
 		76A874B600371DD2B79F22C5 /* Pods_GardenBuddyV1_GardenBuddyV1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1817EFD8A795426535BEAB04 /* Pods_GardenBuddyV1_GardenBuddyV1UITests.framework */; };
+		E8077F2F2382204600D9B5DC /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8077F2E2382204600D9B5DC /* awsconfiguration.json */; };
+		E809A4BB2382160000DB25AF /* TestGardenBuddyV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E809A4BA238215FF00DB25AF /* TestGardenBuddyV1.swift */; };
+		E809A4BD238217E800DB25AF /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E809A4BC238217E800DB25AF /* AWSDynamoDB.framework */; };
+		E809A4BE238217E800DB25AF /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E809A4BC238217E800DB25AF /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E809A4C1238217EF00DB25AF /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E809A4C0238217EF00DB25AF /* AWSCore.framework */; };
+		E809A4C2238217EF00DB25AF /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E809A4C0238217EF00DB25AF /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E809A4C3238217FD00DB25AF /* Pods_GardenBuddyV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D226EA9FEF6CE69E611A4F36 /* Pods_GardenBuddyV1.framework */; };
+		E809A4C4238217FD00DB25AF /* Pods_GardenBuddyV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D226EA9FEF6CE69E611A4F36 /* Pods_GardenBuddyV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E809A4C62382186700DB25AF /* AWSAuthCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E809A4C52382186700DB25AF /* AWSAuthCore.framework */; };
+		E809A4C72382186700DB25AF /* AWSAuthCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E809A4C52382186700DB25AF /* AWSAuthCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E809A4C92382186E00DB25AF /* AWSMobileClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E809A4C82382186E00DB25AF /* AWSMobileClient.framework */; };
+		E809A4CA2382186E00DB25AF /* AWSMobileClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E809A4C82382186E00DB25AF /* AWSMobileClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E87176C22346D7C200332056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87176C12346D7C200332056 /* AppDelegate.swift */; };
 		E87176C42346D7C200332056 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87176C32346D7C200332056 /* SceneDelegate.swift */; };
 		E87176C62346D7C200332056 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87176C52346D7C200332056 /* ContentView.swift */; };
@@ -18,9 +29,6 @@
 		E87176CE2346D7C400332056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87176CC2346D7C400332056 /* LaunchScreen.storyboard */; };
 		E87176D92346D7C400332056 /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87176D82346D7C400332056 /* HelloWorldTests.swift */; };
 		E87176E42346D7C400332056 /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87176E32346D7C400332056 /* HelloWorldUITests.swift */; };
-		E8BB9495238211B50062A77F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BB9494238211B50062A77F /* awsconfiguration.json */; };
-		E8BB9496238211B50062A77F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BB9494238211B50062A77F /* awsconfiguration.json */; };
-		E8BB9497238211B50062A77F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BB9494238211B50062A77F /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E809A4BF238217E800DB25AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E809A4BE238217E800DB25AF /* AWSDynamoDB.framework in Embed Frameworks */,
+				E809A4C2238217EF00DB25AF /* AWSCore.framework in Embed Frameworks */,
+				E809A4C4238217FD00DB25AF /* Pods_GardenBuddyV1.framework in Embed Frameworks */,
+				E809A4CA2382186E00DB25AF /* AWSMobileClient.framework in Embed Frameworks */,
+				E809A4C72382186700DB25AF /* AWSAuthCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1817EFD8A795426535BEAB04 /* Pods_GardenBuddyV1_GardenBuddyV1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GardenBuddyV1_GardenBuddyV1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		411FF7B751B099F1638ACFA8 /* Pods-GardenBuddyV1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GardenBuddyV1Tests.debug.xcconfig"; path = "Target Support Files/Pods-GardenBuddyV1Tests/Pods-GardenBuddyV1Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +75,12 @@
 		CF95EBD6DEBDA348D4E9E81F /* Pods-GardenBuddyV1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GardenBuddyV1Tests.release.xcconfig"; path = "Target Support Files/Pods-GardenBuddyV1Tests/Pods-GardenBuddyV1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D226EA9FEF6CE69E611A4F36 /* Pods_GardenBuddyV1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GardenBuddyV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA97AFD5740C39C5668A2A4A /* Pods-GardenBuddyV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GardenBuddyV1.debug.xcconfig"; path = "Target Support Files/Pods-GardenBuddyV1/Pods-GardenBuddyV1.debug.xcconfig"; sourceTree = "<group>"; };
+		E8077F2E2382204600D9B5DC /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		E809A4BA238215FF00DB25AF /* TestGardenBuddyV1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestGardenBuddyV1.swift; path = "../../GardenBuddyV1-integration-lib-aws-my-sample-app-ios-swift/AmazonAws/Models/NoSQL/TestGardenBuddyV1.swift"; sourceTree = "<group>"; };
+		E809A4BC238217E800DB25AF /* AWSDynamoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E809A4C0238217EF00DB25AF /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E809A4C52382186700DB25AF /* AWSAuthCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSAuthCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E809A4C82382186E00DB25AF /* AWSMobileClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSMobileClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87176BE2346D7C200332056 /* GardenBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GardenBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87176C12346D7C200332056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87176C32346D7C200332056 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +95,6 @@
 		E87176DF2346D7C400332056 /* GardenBuddyV1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GardenBuddyV1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87176E32346D7C400332056 /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		E87176E52346D7C400332056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8BB9494238211B50062A77F /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		F73BAC1C21E257DEE7DAC028 /* Pods-GardenBuddyV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GardenBuddyV1.release.xcconfig"; path = "Target Support Files/Pods-GardenBuddyV1/Pods-GardenBuddyV1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +103,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2855585D4FACBE73B0D3CDFC /* Pods_GardenBuddyV1.framework in Frameworks */,
+				E809A4BD238217E800DB25AF /* AWSDynamoDB.framework in Frameworks */,
+				E809A4C1238217EF00DB25AF /* AWSCore.framework in Frameworks */,
+				E809A4C3238217FD00DB25AF /* Pods_GardenBuddyV1.framework in Frameworks */,
+				E809A4C92382186E00DB25AF /* AWSMobileClient.framework in Frameworks */,
+				E809A4C62382186700DB25AF /* AWSAuthCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +133,10 @@
 		7CECA9F0F719C64184B03B24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E809A4C82382186E00DB25AF /* AWSMobileClient.framework */,
+				E809A4C52382186700DB25AF /* AWSAuthCore.framework */,
+				E809A4C0238217EF00DB25AF /* AWSCore.framework */,
+				E809A4BC238217E800DB25AF /* AWSDynamoDB.framework */,
 				D226EA9FEF6CE69E611A4F36 /* Pods_GardenBuddyV1.framework */,
 				1817EFD8A795426535BEAB04 /* Pods_GardenBuddyV1_GardenBuddyV1UITests.framework */,
 				5D46AF9ECE9B8097C2BD12FA /* Pods_GardenBuddyV1Tests.framework */,
@@ -143,9 +182,10 @@
 		E87176C02346D7C200332056 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				E8BB9494238211B50062A77F /* awsconfiguration.json */,
 				E87176C12346D7C200332056 /* AppDelegate.swift */,
 				E87176C32346D7C200332056 /* SceneDelegate.swift */,
+				E8077F2E2382204600D9B5DC /* awsconfiguration.json */,
+				E809A4BA238215FF00DB25AF /* TestGardenBuddyV1.swift */,
 				E87176C52346D7C200332056 /* ContentView.swift */,
 				E87176C72346D7C400332056 /* Assets.xcassets */,
 				E87176CC2346D7C400332056 /* LaunchScreen.storyboard */,
@@ -193,6 +233,7 @@
 				E87176BB2346D7C200332056 /* Frameworks */,
 				E87176BC2346D7C200332056 /* Resources */,
 				3054564B6B9704063B977A0E /* [CP] Embed Pods Frameworks */,
+				E809A4BF238217E800DB25AF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,7 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8BB9495238211B50062A77F /* awsconfiguration.json in Resources */,
+				E8077F2F2382204600D9B5DC /* awsconfiguration.json in Resources */,
 				E87176CE2346D7C400332056 /* LaunchScreen.storyboard in Resources */,
 				E87176CB2346D7C400332056 /* Preview Assets.xcassets in Resources */,
 				E87176C82346D7C400332056 /* Assets.xcassets in Resources */,
@@ -301,7 +342,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8BB9496238211B50062A77F /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +349,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8BB9497238211B50062A77F /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +464,7 @@
 			files = (
 				E87176C22346D7C200332056 /* AppDelegate.swift in Sources */,
 				E87176C42346D7C200332056 /* SceneDelegate.swift in Sources */,
+				E809A4BB2382160000DB25AF /* TestGardenBuddyV1.swift in Sources */,
 				E87176C62346D7C200332056 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

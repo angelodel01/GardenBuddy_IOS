@@ -7,6 +7,9 @@
 //
 
 import SwiftUI
+import AWSCore
+import AWSMobileClient
+import AWSDynamoDB
 
 struct ContentView: View {
     var body: some View {
@@ -14,6 +17,21 @@ struct ContentView: View {
         Button(action: {
             // your action here
             print("button clicked");
+            let deviceid:String = (UIDevice.current.identifierForVendor?.uuidString)!
+            let message:Set = ["mess"]
+            let objectMapper = AWSDynamoDBObjectMapper.default()
+            
+            let itemToCreate:TestGardenBuddyV1 = TestGardenBuddyV1()
+            itemToCreate._userId = deviceid
+            itemToCreate._message = message
+            
+            objectMapper.save(itemToCreate, completionHandler:{(error : Error?) -> Void in
+                if let error = error{
+                    print("Amazon DynamoDB save error: \(error)")
+                    return
+                }
+                print("User information updated")
+            })
         }) {
             Text("Button title");
         }

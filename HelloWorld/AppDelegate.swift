@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import AWSCore
 import AWSMobileClient
+import AWSDynamoDB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +24,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             didFinishLaunchingWithOptions: launchOptions)
 
     }
-    
+    func postToDB(){
+        let deviceid:String = (UIDevice.current.identifierForVendor?.uuidString)!
+        let message:Set = ["mess"]
+        let objectMapper = AWSDynamoDBObjectMapper.default()
+        
+        let itemToCreate:TestGardenBuddyV1 = TestGardenBuddyV1()
+        itemToCreate._userId = deviceid
+        itemToCreate._message = message
+        
+        objectMapper.save(itemToCreate, completionHandler:{(error : Error?) -> Void in
+            if let error = error{
+                print("Amazon DynamoDB save error: \(error)")
+                return
+            }
+            print("User information updated")
+        })
+    }
 
 //    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        // Override point for customization after application launch.
