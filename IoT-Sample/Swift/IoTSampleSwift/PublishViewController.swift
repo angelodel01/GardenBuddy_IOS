@@ -27,6 +27,6 @@ class PublishViewController: UIViewController {
         let tabBarViewController = tabBarController as! IoTSampleTabBarController
 
 //        iotDataManager.publishString("\(sender.value)", onTopic:tabBarViewController.topic, qoS:.messageDeliveryAttemptedAtMostOnce)
-        iotDataManager.publishString("\(sender.value)", onTopic:"IOS_TEST_TOPIC", qoS:.messageDeliveryAttemptedAtMostOnce)
+        iotDataManager.publishString("Hello I'm the App", onTopic:"1/C/A", qoS:.messageDeliveryAttemptedAtMostOnce)
     }
 }

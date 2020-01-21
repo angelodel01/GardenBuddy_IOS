@@ -32,7 +32,7 @@ class SubscribeViewController: UIViewController {
         let tabBarViewController = tabBarController as! IoTSampleTabBarController
 
 //        iotDataManager.subscribe(toTopic: tabBarViewController.topic, qoS: .messageDeliveryAttemptedAtMostOnce, messageCallback: {
-        iotDataManager.subscribe(toTopic: "IOS_TEST_TOPIC", qoS: .messageDeliveryAttemptedAtMostOnce, messageCallback: {
+        iotDataManager.subscribe(toTopic: "1/A/C", qoS: .messageDeliveryAttemptedAtMostOnce, messageCallback: {
             (payload) ->Void in
             let stringValue = NSString(data: payload, encoding: String.Encoding.utf8.rawValue)!
 
