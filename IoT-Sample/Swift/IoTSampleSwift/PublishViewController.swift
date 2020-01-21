@@ -26,6 +26,7 @@ class PublishViewController: UIViewController {
         let iotDataManager = AWSIoTDataManager(forKey: ASWIoTDataManager)
         let tabBarViewController = tabBarController as! IoTSampleTabBarController
 
-        iotDataManager.publishString("\(sender.value)", onTopic:tabBarViewController.topic, qoS:.messageDeliveryAttemptedAtMostOnce)
+//        iotDataManager.publishString("\(sender.value)", onTopic:tabBarViewController.topic, qoS:.messageDeliveryAttemptedAtMostOnce)
+        iotDataManager.publishString("\(sender.value)", onTopic:"IOS_TEST_TOPIC", qoS:.messageDeliveryAttemptedAtMostOnce)
     }
 }
