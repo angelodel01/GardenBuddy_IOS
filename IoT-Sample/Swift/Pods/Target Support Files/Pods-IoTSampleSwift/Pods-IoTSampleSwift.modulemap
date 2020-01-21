@@ -1,0 +1,6 @@
+framework module Pods_IoTSampleSwift {
+  umbrella header "Pods-IoTSampleSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
