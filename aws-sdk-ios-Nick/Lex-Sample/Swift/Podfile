@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+use_frameworks!
+target :'LexSwift' do
+  pod 'JSQMessagesViewController', '~>7.3.4'
+
+  $awsVersion = '~> 2.11.0'
+  pod 'AWSMobileClient', $awsVersion
+  pod 'AWSLex', $awsVersion
+end
+
+
