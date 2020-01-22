@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11E4ED8423D912A5007E8388 /* Pods-CognitoAuthSample.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 25F1892F88EDA8BDE69BF5D4 /* Pods-CognitoAuthSample.debug.xcconfig */; };
+		11E4ED8523D912A8007E8388 /* Pods-CognitoAuthSample.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1F05DA6FBFD6A102F7A9C410 /* Pods-CognitoAuthSample.release.xcconfig */; };
 		56ED642C5D34BCB902EA8758 /* Pods_CognitoAuthSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D86A94F68F360B596FE3AC /* Pods_CognitoAuthSample.framework */; };
 		EF5BA2481EDD247400CDD73E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA2471EDD247400CDD73E /* AppDelegate.swift */; };
 		EF5BA24A1EDD247400CDD73E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BA2491EDD247400CDD73E /* ViewController.swift */; };
@@ -211,7 +213,9 @@
 			files = (
 				EF5BA2521EDD247400CDD73E /* LaunchScreen.storyboard in Resources */,
 				EF5BA24F1EDD247400CDD73E /* Assets.xcassets in Resources */,
+				11E4ED8523D912A8007E8388 /* Pods-CognitoAuthSample.release.xcconfig in Resources */,
 				EF5BA24D1EDD247400CDD73E /* Main.storyboard in Resources */,
+				11E4ED8423D912A5007E8388 /* Pods-CognitoAuthSample.debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

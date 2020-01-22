@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		118BA29E23D907A200AEEC84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BA29D23D907A200AEEC84 /* AppDelegate.swift */; };
+		118BA2A023D907A200AEEC84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BA29F23D907A200AEEC84 /* SceneDelegate.swift */; };
+		118BA2A223D907A200AEEC84 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BA2A123D907A200AEEC84 /* FirstViewController.swift */; };
+		118BA2A423D907A200AEEC84 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BA2A323D907A200AEEC84 /* SecondViewController.swift */; };
+		118BA2A723D907A200AEEC84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118BA2A523D907A200AEEC84 /* Main.storyboard */; };
+		118BA2AA23D907A200AEEC84 /* GardenBuddy_FrontEnd1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 118BA2A823D907A200AEEC84 /* GardenBuddy_FrontEnd1.xcdatamodeld */; };
+		118BA2AC23D907A600AEEC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118BA2AB23D907A600AEEC84 /* Assets.xcassets */; };
+		118BA2AF23D907A600AEEC84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118BA2AD23D907A600AEEC84 /* LaunchScreen.storyboard */; };
+		118BA2BA23D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BA2B923D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests.swift */; };
+		118BA2C523D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BA2C423D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		118BA2B623D907A600AEEC84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118BA29223D907A200AEEC84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118BA29923D907A200AEEC84;
+			remoteInfo = GardenBuddy_FrontEnd1;
+		};
+		118BA2C123D907A600AEEC84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118BA29223D907A200AEEC84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118BA29923D907A200AEEC84;
+			remoteInfo = GardenBuddy_FrontEnd1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		118BA29A23D907A200AEEC84 /* GardenBuddy_FrontEnd1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GardenBuddy_FrontEnd1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		118BA29D23D907A200AEEC84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		118BA29F23D907A200AEEC84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		118BA2A123D907A200AEEC84 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		118BA2A323D907A200AEEC84 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		118BA2A623D907A200AEEC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		118BA2A923D907A200AEEC84 /* GardenBuddy_FrontEnd1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GardenBuddy_FrontEnd1.xcdatamodel; sourceTree = "<group>"; };
+		118BA2AB23D907A600AEEC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		118BA2AE23D907A600AEEC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		118BA2B023D907A600AEEC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118BA2B523D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GardenBuddy_FrontEnd1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		118BA2B923D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenBuddy_FrontEnd1Tests.swift; sourceTree = "<group>"; };
+		118BA2BB23D907A600AEEC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118BA2C023D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GardenBuddy_FrontEnd1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		118BA2C423D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenBuddy_FrontEnd1UITests.swift; sourceTree = "<group>"; };
+		118BA2C623D907A600AEEC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		118BA29723D907A200AEEC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118BA2B223D907A600AEEC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118BA2BD23D907A600AEEC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		118BA29123D907A200AEEC84 = {
+			isa = PBXGroup;
+			children = (
+				118BA29C23D907A200AEEC84 /* GardenBuddy_FrontEnd1 */,
+				118BA2B823D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests */,
+				118BA2C323D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests */,
+				118BA29B23D907A200AEEC84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		118BA29B23D907A200AEEC84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118BA29A23D907A200AEEC84 /* GardenBuddy_FrontEnd1.app */,
+				118BA2B523D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests.xctest */,
+				118BA2C023D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		118BA29C23D907A200AEEC84 /* GardenBuddy_FrontEnd1 */ = {
+			isa = PBXGroup;
+			children = (
+				118BA29D23D907A200AEEC84 /* AppDelegate.swift */,
+				118BA29F23D907A200AEEC84 /* SceneDelegate.swift */,
+				118BA2A123D907A200AEEC84 /* FirstViewController.swift */,
+				118BA2A323D907A200AEEC84 /* SecondViewController.swift */,
+				118BA2A523D907A200AEEC84 /* Main.storyboard */,
+				118BA2AB23D907A600AEEC84 /* Assets.xcassets */,
+				118BA2AD23D907A600AEEC84 /* LaunchScreen.storyboard */,
+				118BA2B023D907A600AEEC84 /* Info.plist */,
+				118BA2A823D907A200AEEC84 /* GardenBuddy_FrontEnd1.xcdatamodeld */,
+			);
+			path = GardenBuddy_FrontEnd1;
+			sourceTree = "<group>";
+		};
+		118BA2B823D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				118BA2B923D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests.swift */,
+				118BA2BB23D907A600AEEC84 /* Info.plist */,
+			);
+			path = GardenBuddy_FrontEnd1Tests;
+			sourceTree = "<group>";
+		};
+		118BA2C323D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				118BA2C423D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests.swift */,
+				118BA2C623D907A600AEEC84 /* Info.plist */,
+			);
+			path = GardenBuddy_FrontEnd1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		118BA29923D907A200AEEC84 /* GardenBuddy_FrontEnd1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118BA2C923D907A600AEEC84 /* Build configuration list for PBXNativeTarget "GardenBuddy_FrontEnd1" */;
+			buildPhases = (
+				118BA29623D907A200AEEC84 /* Sources */,
+				118BA29723D907A200AEEC84 /* Frameworks */,
+				118BA29823D907A200AEEC84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GardenBuddy_FrontEnd1;
+			productName = GardenBuddy_FrontEnd1;
+			productReference = 118BA29A23D907A200AEEC84 /* GardenBuddy_FrontEnd1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		118BA2B423D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118BA2CC23D907A600AEEC84 /* Build configuration list for PBXNativeTarget "GardenBuddy_FrontEnd1Tests" */;
+			buildPhases = (
+				118BA2B123D907A600AEEC84 /* Sources */,
+				118BA2B223D907A600AEEC84 /* Frameworks */,
+				118BA2B323D907A600AEEC84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118BA2B723D907A600AEEC84 /* PBXTargetDependency */,
+			);
+			name = GardenBuddy_FrontEnd1Tests;
+			productName = GardenBuddy_FrontEnd1Tests;
+			productReference = 118BA2B523D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		118BA2BF23D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118BA2CF23D907A600AEEC84 /* Build configuration list for PBXNativeTarget "GardenBuddy_FrontEnd1UITests" */;
+			buildPhases = (
+				118BA2BC23D907A600AEEC84 /* Sources */,
+				118BA2BD23D907A600AEEC84 /* Frameworks */,
+				118BA2BE23D907A600AEEC84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118BA2C223D907A600AEEC84 /* PBXTargetDependency */,
+			);
+			name = GardenBuddy_FrontEnd1UITests;
+			productName = GardenBuddy_FrontEnd1UITests;
+			productReference = 118BA2C023D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		118BA29223D907A200AEEC84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Misc;
+				TargetAttributes = {
+					118BA29923D907A200AEEC84 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					118BA2B423D907A600AEEC84 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 118BA29923D907A200AEEC84;
+					};
+					118BA2BF23D907A600AEEC84 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 118BA29923D907A200AEEC84;
+					};
+				};
+			};
+			buildConfigurationList = 118BA29523D907A200AEEC84 /* Build configuration list for PBXProject "GardenBuddy_FrontEnd1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 118BA29123D907A200AEEC84;
+			productRefGroup = 118BA29B23D907A200AEEC84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				118BA29923D907A200AEEC84 /* GardenBuddy_FrontEnd1 */,
+				118BA2B423D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests */,
+				118BA2BF23D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		118BA29823D907A200AEEC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118BA2AF23D907A600AEEC84 /* LaunchScreen.storyboard in Resources */,
+				118BA2AC23D907A600AEEC84 /* Assets.xcassets in Resources */,
+				118BA2A723D907A200AEEC84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118BA2B323D907A600AEEC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118BA2BE23D907A600AEEC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		118BA29623D907A200AEEC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118BA2A423D907A200AEEC84 /* SecondViewController.swift in Sources */,
+				118BA2A223D907A200AEEC84 /* FirstViewController.swift in Sources */,
+				118BA29E23D907A200AEEC84 /* AppDelegate.swift in Sources */,
+				118BA2A023D907A200AEEC84 /* SceneDelegate.swift in Sources */,
+				118BA2AA23D907A200AEEC84 /* GardenBuddy_FrontEnd1.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118BA2B123D907A600AEEC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118BA2BA23D907A600AEEC84 /* GardenBuddy_FrontEnd1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118BA2BC23D907A600AEEC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118BA2C523D907A600AEEC84 /* GardenBuddy_FrontEnd1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		118BA2B723D907A600AEEC84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118BA29923D907A200AEEC84 /* GardenBuddy_FrontEnd1 */;
+			targetProxy = 118BA2B623D907A600AEEC84 /* PBXContainerItemProxy */;
+		};
+		118BA2C223D907A600AEEC84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118BA29923D907A200AEEC84 /* GardenBuddy_FrontEnd1 */;
+			targetProxy = 118BA2C123D907A600AEEC84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		118BA2A523D907A200AEEC84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118BA2A623D907A200AEEC84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		118BA2AD23D907A600AEEC84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118BA2AE23D907A600AEEC84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		118BA2C723D907A600AEEC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		118BA2C823D907A600AEEC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		118BA2CA23D907A600AEEC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GardenBuddy_FrontEnd1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CalPoly.GardenBuddy-FrontEnd1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		118BA2CB23D907A600AEEC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GardenBuddy_FrontEnd1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CalPoly.GardenBuddy-FrontEnd1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		118BA2CD23D907A600AEEC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GardenBuddy_FrontEnd1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CalPoly.GardenBuddy-FrontEnd1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GardenBuddy_FrontEnd1.app/GardenBuddy_FrontEnd1";
+			};
+			name = Debug;
+		};
+		118BA2CE23D907A600AEEC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GardenBuddy_FrontEnd1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CalPoly.GardenBuddy-FrontEnd1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GardenBuddy_FrontEnd1.app/GardenBuddy_FrontEnd1";
+			};
+			name = Release;
+		};
+		118BA2D023D907A600AEEC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GardenBuddy_FrontEnd1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CalPoly.GardenBuddy-FrontEnd1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GardenBuddy_FrontEnd1;
+			};
+			name = Debug;
+		};
+		118BA2D123D907A600AEEC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GardenBuddy_FrontEnd1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CalPoly.GardenBuddy-FrontEnd1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GardenBuddy_FrontEnd1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		118BA29523D907A200AEEC84 /* Build configuration list for PBXProject "GardenBuddy_FrontEnd1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118BA2C723D907A600AEEC84 /* Debug */,
+				118BA2C823D907A600AEEC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		118BA2C923D907A600AEEC84 /* Build configuration list for PBXNativeTarget "GardenBuddy_FrontEnd1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118BA2CA23D907A600AEEC84 /* Debug */,
+				118BA2CB23D907A600AEEC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		118BA2CC23D907A600AEEC84 /* Build configuration list for PBXNativeTarget "GardenBuddy_FrontEnd1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118BA2CD23D907A600AEEC84 /* Debug */,
+				118BA2CE23D907A600AEEC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		118BA2CF23D907A600AEEC84 /* Build configuration list for PBXNativeTarget "GardenBuddy_FrontEnd1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118BA2D023D907A600AEEC84 /* Debug */,
+				118BA2D123D907A600AEEC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		118BA2A823D907A200AEEC84 /* GardenBuddy_FrontEnd1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				118BA2A923D907A200AEEC84 /* GardenBuddy_FrontEnd1.xcdatamodel */,
+			);
+			currentVersion = 118BA2A923D907A200AEEC84 /* GardenBuddy_FrontEnd1.xcdatamodel */;
+			path = GardenBuddy_FrontEnd1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 118BA29223D907A200AEEC84 /* Project object */;
+}
