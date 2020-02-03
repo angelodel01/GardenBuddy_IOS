@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Nick_Frontend_YardWorkZone/Pods-Nick_Frontend_YardWorkZone-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AWSCognitoAuth/AWSCognitoAuth.framework
+${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework

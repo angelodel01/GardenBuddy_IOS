@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18CAD12BAFB5E89B1A3CDABF669463B1 /* AWSCognitoAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = AF383558CC70FE3DF4085B4AD4DEF661 /* AWSCognitoAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A8CA0EED0EB85CB85D7FD6A1921F146 /* AWSCognitoIdentityASF.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5BAA8F0066E3E5E76198188A6360 /* AWSCognitoIdentityASF.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		43B113294AA81382480E9FF579A4B3BF /* Pods-Nick_Frontend_YardWorkZone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1CD78081B7760F084687577727008B /* Pods-Nick_Frontend_YardWorkZone-dummy.m */; };
+		653A801D51FE11380D910F434126B662 /* AWSCognitoAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4447D3FA8BA5329A4776AEBAA0FA09A /* AWSCognitoAuth-dummy.m */; };
+		6D213F4B205FE8F8BED5DB91164168BA /* AWSCognitoIdentityProviderASF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EE6F415D901A045BE18AA0E171311C /* AWSCognitoIdentityProviderASF-dummy.m */; };
+		7FB6C25F3B17061BA858EFAA2EDC1162 /* AWSCognitoAuthUICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 564B113752E2B7218CA68238B0CD91A8 /* AWSCognitoAuthUICKeyChainStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		848705F025CE44AF3A1ABB04FD4C969C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EACB9045F8AE5178494A0CD052C56B /* Foundation.framework */; };
+		9D57A3FDEC76502AF77B0F83163FD700 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EACB9045F8AE5178494A0CD052C56B /* Foundation.framework */; };
+		ACE92FA539B081C9DFBA4CE65B3D8F34 /* AWSCognitoIdentityProviderASF.m in Sources */ = {isa = PBXBuildFile; fileRef = 96629545635A2DF1F80B63C8901EB015 /* AWSCognitoIdentityProviderASF.m */; };
+		AD9AD5A377897C6E8F5AF1835BFD4C5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EACB9045F8AE5178494A0CD052C56B /* Foundation.framework */; };
+		CB725B1D2AF61FC0EC8F700093408CEC /* Pods-Nick_Frontend_YardWorkZone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD8A32A7F80BF072FB28EFD52B8AE64 /* Pods-Nick_Frontend_YardWorkZone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D70B0B227FC5617D396DE133D03280BC /* AWSCognitoAuthUICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E7B58CE1DF23A374E9C64C6BFC33B /* AWSCognitoAuthUICKeyChainStore.m */; };
+		D74EFEBF9E213CEB804034C979A049DB /* AWSCognitoIdentityProviderASF.h in Headers */ = {isa = PBXBuildFile; fileRef = 5211D326AEA746A54EDC4F1CD4A9D397 /* AWSCognitoIdentityProviderASF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8F77D4C9024C951BE8A506E59D20852 /* AWSCognitoAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C697DAE608BB6A2DE7720BBFF02388 /* AWSCognitoAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E32924ADC6926C1B0699056A10708C60 /* AWSCognitoIdentityProviderASF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B778D7FFB0F99D7B3A5165FB4EE901F1 /* AWSCognitoIdentityProviderASF.framework */; };
+		E448E91670AE7210D9EE14A35C46A30B /* AWSCognitoIdentityProviderASF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 650A5D2FDAB57198F6A4154EFB80E447 /* AWSCognitoIdentityProviderASF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F699BB246E4723CC6D0F731D4EBDC34A /* AWSCognitoAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFC7B9CBA37CA17D4CF96CB7A8366D /* AWSCognitoAuth.m */; };
+		F6B1C1A1455AC014698911A857859FBD /* AWSCognitoAuth_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 72976B01F2B75A9FE87070C529243647 /* AWSCognitoAuth_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B44EABF783E8F44189E102FBC2B5648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF90BA4F6EC5653945C7B0FFD9128D2;
+			remoteInfo = AWSCognitoIdentityProviderASF;
+		};
+		492E555CB5EFA4A36984FF2B21C32906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF90BA4F6EC5653945C7B0FFD9128D2;
+			remoteInfo = AWSCognitoIdentityProviderASF;
+		};
+		F748571684242DA2ABE5B9B70D280204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87BE8D50E58BABA28128D52319A5A751;
+			remoteInfo = AWSCognitoAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ACFC7B9CBA37CA17D4CF96CB7A8366D /* AWSCognitoAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoAuth.m; path = AWSCognitoAuth/AWSCognitoAuth.m; sourceTree = "<group>"; };
+		0D1B5BAA8F0066E3E5E76198188A6360 /* AWSCognitoIdentityASF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityASF.h; path = AWSCognitoIdentityProviderASF/Internal/AWSCognitoIdentityASF.h; sourceTree = "<group>"; };
+		11A4D6D7EA374983E768DDE37C036FA8 /* Pods-Nick_Frontend_YardWorkZone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Nick_Frontend_YardWorkZone-acknowledgements.plist"; sourceTree = "<group>"; };
+		25199C822C1734762D1753B8522AFAFF /* AWSCognitoAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSCognitoAuth.xcconfig; sourceTree = "<group>"; };
+		27587F558B3520A15275429CDE98E2B6 /* Pods-Nick_Frontend_YardWorkZone-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Nick_Frontend_YardWorkZone-Info.plist"; sourceTree = "<group>"; };
+		34337A23C92FC6969F6C496F18EEBAD2 /* AWSCognitoAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSCognitoAuth.framework; path = AWSCognitoAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1CD78081B7760F084687577727008B /* Pods-Nick_Frontend_YardWorkZone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Nick_Frontend_YardWorkZone-dummy.m"; sourceTree = "<group>"; };
+		42EE6F415D901A045BE18AA0E171311C /* AWSCognitoIdentityProviderASF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSCognitoIdentityProviderASF-dummy.m"; sourceTree = "<group>"; };
+		455F423D8F3AA09FF2A456CBC631F85A /* Pods-Nick_Frontend_YardWorkZone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Nick_Frontend_YardWorkZone.modulemap"; sourceTree = "<group>"; };
+		500E63EB00202D9D3EDF7D9E6BC1ECC9 /* Pods-Nick_Frontend_YardWorkZone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Nick_Frontend_YardWorkZone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5211D326AEA746A54EDC4F1CD4A9D397 /* AWSCognitoIdentityProviderASF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityProviderASF.h; path = AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.h; sourceTree = "<group>"; };
+		53FDD3934F5BADB986D64D1C525C9E88 /* AWSCognitoAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSCognitoAuth-Info.plist"; sourceTree = "<group>"; };
+		564B113752E2B7218CA68238B0CD91A8 /* AWSCognitoAuthUICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoAuthUICKeyChainStore.h; path = AWSCognitoAuth/Internal/UICKeyChainStore/AWSCognitoAuthUICKeyChainStore.h; sourceTree = "<group>"; };
+		592313CB94B49286EEF277EA91D3D95A /* AWSCognitoIdentityProviderASF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSCognitoIdentityProviderASF.framework; path = AWSCognitoIdentityProviderASF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD8A32A7F80BF072FB28EFD52B8AE64 /* Pods-Nick_Frontend_YardWorkZone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Nick_Frontend_YardWorkZone-umbrella.h"; sourceTree = "<group>"; };
+		650A5D2FDAB57198F6A4154EFB80E447 /* AWSCognitoIdentityProviderASF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCognitoIdentityProviderASF-umbrella.h"; sourceTree = "<group>"; };
+		72976B01F2B75A9FE87070C529243647 /* AWSCognitoAuth_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoAuth_Internal.h; path = AWSCognitoAuth/Internal/AWSCognitoAuth_Internal.h; sourceTree = "<group>"; };
+		786535908CA274A40BDCC43771382F88 /* AWSCognitoAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCognitoAuth-prefix.pch"; sourceTree = "<group>"; };
+		7FED8461CE71EA96820140B8E61FEC5E /* AWSCognitoIdentityProviderASF-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSCognitoIdentityProviderASF-Info.plist"; sourceTree = "<group>"; };
+		88560B168CA03C974E3158964ABBD167 /* AWSCognitoIdentityProviderASF.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSCognitoIdentityProviderASF.xcconfig; sourceTree = "<group>"; };
+		96629545635A2DF1F80B63C8901EB015 /* AWSCognitoIdentityProviderASF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityProviderASF.m; path = AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.m; sourceTree = "<group>"; };
+		99686387685D1306B4477F0DC85E4B2F /* AWSCognitoIdentityProviderASF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSCognitoIdentityProviderASF.modulemap; sourceTree = "<group>"; };
+		99B876BE99EACEBA7624E18F2F0AD321 /* AWSCognitoAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSCognitoAuth.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF383558CC70FE3DF4085B4AD4DEF661 /* AWSCognitoAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoAuth.h; path = AWSCognitoAuth/AWSCognitoAuth.h; sourceTree = "<group>"; };
+		B778D7FFB0F99D7B3A5165FB4EE901F1 /* AWSCognitoIdentityProviderASF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSCognitoIdentityProviderASF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD8387FD58E756034A2808A67D4D968 /* Pods_Nick_Frontend_YardWorkZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Nick_Frontend_YardWorkZone.framework; path = "Pods-Nick_Frontend_YardWorkZone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C697DAE608BB6A2DE7720BBFF02388 /* AWSCognitoAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCognitoAuth-umbrella.h"; sourceTree = "<group>"; };
+		CBF2B95A43756FF63E22720E331437B8 /* Pods-Nick_Frontend_YardWorkZone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Nick_Frontend_YardWorkZone-frameworks.sh"; sourceTree = "<group>"; };
+		CE452BC3AFF13B5F4EF8619DC0C6E355 /* AWSCognitoIdentityProviderASF-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCognitoIdentityProviderASF-prefix.pch"; sourceTree = "<group>"; };
+		E3AF6C16FB0388CD7F8F0B7D37DC1E84 /* Pods-Nick_Frontend_YardWorkZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nick_Frontend_YardWorkZone.debug.xcconfig"; sourceTree = "<group>"; };
+		E4447D3FA8BA5329A4776AEBAA0FA09A /* AWSCognitoAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSCognitoAuth-dummy.m"; sourceTree = "<group>"; };
+		E8EACB9045F8AE5178494A0CD052C56B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F13FE6C9EC08F540A7DB1C5BEA40EE61 /* Pods-Nick_Frontend_YardWorkZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Nick_Frontend_YardWorkZone.release.xcconfig"; sourceTree = "<group>"; };
+		F255A7AA1909960B05C0AC161326601F /* libAWSCognitoIdentityProviderASFBinary.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libAWSCognitoIdentityProviderASFBinary.a; path = AWSCognitoIdentityProviderASF/Internal/libAWSCognitoIdentityProviderASFBinary.a; sourceTree = "<group>"; };
+		FB1E7B58CE1DF23A374E9C64C6BFC33B /* AWSCognitoAuthUICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoAuthUICKeyChainStore.m; path = AWSCognitoAuth/Internal/UICKeyChainStore/AWSCognitoAuthUICKeyChainStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FE9AA14A52269D2122B535D301DC9B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848705F025CE44AF3A1ABB04FD4C969C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35DB8B8420AA4BFAB19B968B0D4C896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32924ADC6926C1B0699056A10708C60 /* AWSCognitoIdentityProviderASF.framework in Frameworks */,
+				9D57A3FDEC76502AF77B0F83163FD700 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2EE273A20ABDDCEBA25E34918B6821A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9AD5A377897C6E8F5AF1835BFD4C5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B813FD5678AE3218CB7DA2E03A3855 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99B876BE99EACEBA7624E18F2F0AD321 /* AWSCognitoAuth.modulemap */,
+				25199C822C1734762D1753B8522AFAFF /* AWSCognitoAuth.xcconfig */,
+				E4447D3FA8BA5329A4776AEBAA0FA09A /* AWSCognitoAuth-dummy.m */,
+				53FDD3934F5BADB986D64D1C525C9E88 /* AWSCognitoAuth-Info.plist */,
+				786535908CA274A40BDCC43771382F88 /* AWSCognitoAuth-prefix.pch */,
+				C9C697DAE608BB6A2DE7720BBFF02388 /* AWSCognitoAuth-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AWSCognitoAuth";
+			sourceTree = "<group>";
+		};
+		0AE4A6D8F6E202A1451C2097E2C9C084 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45D8B916BA001CFBB7D2757E265A752C /* Pods-Nick_Frontend_YardWorkZone */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1D5144609C204D1F3F9129F4ED2FF8F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34337A23C92FC6969F6C496F18EEBAD2 /* AWSCognitoAuth.framework */,
+				592313CB94B49286EEF277EA91D3D95A /* AWSCognitoIdentityProviderASF.framework */,
+				BFD8387FD58E756034A2808A67D4D968 /* Pods_Nick_Frontend_YardWorkZone.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45D8B916BA001CFBB7D2757E265A752C /* Pods-Nick_Frontend_YardWorkZone */ = {
+			isa = PBXGroup;
+			children = (
+				455F423D8F3AA09FF2A456CBC631F85A /* Pods-Nick_Frontend_YardWorkZone.modulemap */,
+				500E63EB00202D9D3EDF7D9E6BC1ECC9 /* Pods-Nick_Frontend_YardWorkZone-acknowledgements.markdown */,
+				11A4D6D7EA374983E768DDE37C036FA8 /* Pods-Nick_Frontend_YardWorkZone-acknowledgements.plist */,
+				3F1CD78081B7760F084687577727008B /* Pods-Nick_Frontend_YardWorkZone-dummy.m */,
+				CBF2B95A43756FF63E22720E331437B8 /* Pods-Nick_Frontend_YardWorkZone-frameworks.sh */,
+				27587F558B3520A15275429CDE98E2B6 /* Pods-Nick_Frontend_YardWorkZone-Info.plist */,
+				5FD8A32A7F80BF072FB28EFD52B8AE64 /* Pods-Nick_Frontend_YardWorkZone-umbrella.h */,
+				E3AF6C16FB0388CD7F8F0B7D37DC1E84 /* Pods-Nick_Frontend_YardWorkZone.debug.xcconfig */,
+				F13FE6C9EC08F540A7DB1C5BEA40EE61 /* Pods-Nick_Frontend_YardWorkZone.release.xcconfig */,
+			);
+			name = "Pods-Nick_Frontend_YardWorkZone";
+			path = "Target Support Files/Pods-Nick_Frontend_YardWorkZone";
+			sourceTree = "<group>";
+		};
+		5B506518F92AAF502BCE7872A4C624B7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8EACB9045F8AE5178494A0CD052C56B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		97F32D616856BA6DC48562A9B867E2C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B778D7FFB0F99D7B3A5165FB4EE901F1 /* AWSCognitoIdentityProviderASF.framework */,
+				5B506518F92AAF502BCE7872A4C624B7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D02706FA313268F5359F77D26180FAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEC1FF2A9FB82DFD83EF33306C70C54D /* AWSCognitoAuth */,
+				D81ABBB0BAA3246FF92F02723A78A608 /* AWSCognitoIdentityProviderASF */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D443F20A04AF6D37D8912CDEBDECC8F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99686387685D1306B4477F0DC85E4B2F /* AWSCognitoIdentityProviderASF.modulemap */,
+				88560B168CA03C974E3158964ABBD167 /* AWSCognitoIdentityProviderASF.xcconfig */,
+				42EE6F415D901A045BE18AA0E171311C /* AWSCognitoIdentityProviderASF-dummy.m */,
+				7FED8461CE71EA96820140B8E61FEC5E /* AWSCognitoIdentityProviderASF-Info.plist */,
+				CE452BC3AFF13B5F4EF8619DC0C6E355 /* AWSCognitoIdentityProviderASF-prefix.pch */,
+				650A5D2FDAB57198F6A4154EFB80E447 /* AWSCognitoIdentityProviderASF-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AWSCognitoIdentityProviderASF";
+			sourceTree = "<group>";
+		};
+		BEC1FF2A9FB82DFD83EF33306C70C54D /* AWSCognitoAuth */ = {
+			isa = PBXGroup;
+			children = (
+				AF383558CC70FE3DF4085B4AD4DEF661 /* AWSCognitoAuth.h */,
+				0ACFC7B9CBA37CA17D4CF96CB7A8366D /* AWSCognitoAuth.m */,
+				72976B01F2B75A9FE87070C529243647 /* AWSCognitoAuth_Internal.h */,
+				564B113752E2B7218CA68238B0CD91A8 /* AWSCognitoAuthUICKeyChainStore.h */,
+				FB1E7B58CE1DF23A374E9C64C6BFC33B /* AWSCognitoAuthUICKeyChainStore.m */,
+				01B813FD5678AE3218CB7DA2E03A3855 /* Support Files */,
+			);
+			name = AWSCognitoAuth;
+			path = AWSCognitoAuth;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				97F32D616856BA6DC48562A9B867E2C4 /* Frameworks */,
+				9D02706FA313268F5359F77D26180FAB /* Pods */,
+				1D5144609C204D1F3F9129F4ED2FF8F7 /* Products */,
+				0AE4A6D8F6E202A1451C2097E2C9C084 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D81ABBB0BAA3246FF92F02723A78A608 /* AWSCognitoIdentityProviderASF */ = {
+			isa = PBXGroup;
+			children = (
+				0D1B5BAA8F0066E3E5E76198188A6360 /* AWSCognitoIdentityASF.h */,
+				5211D326AEA746A54EDC4F1CD4A9D397 /* AWSCognitoIdentityProviderASF.h */,
+				96629545635A2DF1F80B63C8901EB015 /* AWSCognitoIdentityProviderASF.m */,
+				E84558093A2366F57FF2F2DFA803BA75 /* Frameworks */,
+				9D443F20A04AF6D37D8912CDEBDECC8F /* Support Files */,
+			);
+			name = AWSCognitoIdentityProviderASF;
+			path = AWSCognitoIdentityProviderASF;
+			sourceTree = "<group>";
+		};
+		E84558093A2366F57FF2F2DFA803BA75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F255A7AA1909960B05C0AC161326601F /* libAWSCognitoIdentityProviderASFBinary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60BCAA19C091DD0B3B68CE95BB811E86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB725B1D2AF61FC0EC8F700093408CEC /* Pods-Nick_Frontend_YardWorkZone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C67B1B9BF9100CE4C0E8F237BD01D35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8CA0EED0EB85CB85D7FD6A1921F146 /* AWSCognitoIdentityASF.h in Headers */,
+				E448E91670AE7210D9EE14A35C46A30B /* AWSCognitoIdentityProviderASF-umbrella.h in Headers */,
+				D74EFEBF9E213CEB804034C979A049DB /* AWSCognitoIdentityProviderASF.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A82B3214F43BC01B177F50973EFAE2C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F77D4C9024C951BE8A506E59D20852 /* AWSCognitoAuth-umbrella.h in Headers */,
+				18CAD12BAFB5E89B1A3CDABF669463B1 /* AWSCognitoAuth.h in Headers */,
+				F6B1C1A1455AC014698911A857859FBD /* AWSCognitoAuth_Internal.h in Headers */,
+				7FB6C25F3B17061BA858EFAA2EDC1162 /* AWSCognitoAuthUICKeyChainStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		58B8C277CE572CD9A0F68F7D462C51F0 /* Pods-Nick_Frontend_YardWorkZone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFD8C2B8DD6DE160321DED4076BBC38A /* Build configuration list for PBXNativeTarget "Pods-Nick_Frontend_YardWorkZone" */;
+			buildPhases = (
+				60BCAA19C091DD0B3B68CE95BB811E86 /* Headers */,
+				61C2E7C851C09DF6C744A6CE4D7E4559 /* Sources */,
+				2FE9AA14A52269D2122B535D301DC9B4 /* Frameworks */,
+				726D4477DCE32C99F04054FDBB0644D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAC927E48305FA22DB9D2AD88685E118 /* PBXTargetDependency */,
+				A916DE53597ECC17F62A2E741CCB3A68 /* PBXTargetDependency */,
+			);
+			name = "Pods-Nick_Frontend_YardWorkZone";
+			productName = "Pods-Nick_Frontend_YardWorkZone";
+			productReference = BFD8387FD58E756034A2808A67D4D968 /* Pods_Nick_Frontend_YardWorkZone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87BE8D50E58BABA28128D52319A5A751 /* AWSCognitoAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABED9DBEF5EA7D620A9B313ECFF3F96D /* Build configuration list for PBXNativeTarget "AWSCognitoAuth" */;
+			buildPhases = (
+				A82B3214F43BC01B177F50973EFAE2C5 /* Headers */,
+				6CE5ABA329B326FEF8288664D3DED21E /* Sources */,
+				D35DB8B8420AA4BFAB19B968B0D4C896 /* Frameworks */,
+				2FC1CBA9F51339630F310D46554EBB46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6176B6E536835193CB8C122F58671AAD /* PBXTargetDependency */,
+			);
+			name = AWSCognitoAuth;
+			productName = AWSCognitoAuth;
+			productReference = 34337A23C92FC6969F6C496F18EEBAD2 /* AWSCognitoAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBF90BA4F6EC5653945C7B0FFD9128D2 /* AWSCognitoIdentityProviderASF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905B967F39FD1A19A559437C78956DDC /* Build configuration list for PBXNativeTarget "AWSCognitoIdentityProviderASF" */;
+			buildPhases = (
+				8C67B1B9BF9100CE4C0E8F237BD01D35 /* Headers */,
+				52528F2A234C841CC5C054C75A62C753 /* Sources */,
+				E2EE273A20ABDDCEBA25E34918B6821A /* Frameworks */,
+				55B83D1323AC7204DCB6B1C766E28375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AWSCognitoIdentityProviderASF;
+			productName = AWSCognitoIdentityProviderASF;
+			productReference = 592313CB94B49286EEF277EA91D3D95A /* AWSCognitoIdentityProviderASF.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1D5144609C204D1F3F9129F4ED2FF8F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87BE8D50E58BABA28128D52319A5A751 /* AWSCognitoAuth */,
+				BBF90BA4F6EC5653945C7B0FFD9128D2 /* AWSCognitoIdentityProviderASF */,
+				58B8C277CE572CD9A0F68F7D462C51F0 /* Pods-Nick_Frontend_YardWorkZone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FC1CBA9F51339630F310D46554EBB46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B83D1323AC7204DCB6B1C766E28375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		726D4477DCE32C99F04054FDBB0644D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52528F2A234C841CC5C054C75A62C753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D213F4B205FE8F8BED5DB91164168BA /* AWSCognitoIdentityProviderASF-dummy.m in Sources */,
+				ACE92FA539B081C9DFBA4CE65B3D8F34 /* AWSCognitoIdentityProviderASF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C2E7C851C09DF6C744A6CE4D7E4559 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43B113294AA81382480E9FF579A4B3BF /* Pods-Nick_Frontend_YardWorkZone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE5ABA329B326FEF8288664D3DED21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653A801D51FE11380D910F434126B662 /* AWSCognitoAuth-dummy.m in Sources */,
+				F699BB246E4723CC6D0F731D4EBDC34A /* AWSCognitoAuth.m in Sources */,
+				D70B0B227FC5617D396DE133D03280BC /* AWSCognitoAuthUICKeyChainStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6176B6E536835193CB8C122F58671AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSCognitoIdentityProviderASF;
+			target = BBF90BA4F6EC5653945C7B0FFD9128D2 /* AWSCognitoIdentityProviderASF */;
+			targetProxy = 492E555CB5EFA4A36984FF2B21C32906 /* PBXContainerItemProxy */;
+		};
+		A916DE53597ECC17F62A2E741CCB3A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSCognitoIdentityProviderASF;
+			target = BBF90BA4F6EC5653945C7B0FFD9128D2 /* AWSCognitoIdentityProviderASF */;
+			targetProxy = 2B44EABF783E8F44189E102FBC2B5648 /* PBXContainerItemProxy */;
+		};
+		CAC927E48305FA22DB9D2AD88685E118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSCognitoAuth;
+			target = 87BE8D50E58BABA28128D52319A5A751 /* AWSCognitoAuth */;
+			targetProxy = F748571684242DA2ABE5B9B70D280204 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DC6F447FDDFD2EE0BDCD148020EFD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25199C822C1734762D1753B8522AFAFF /* AWSCognitoAuth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSCognitoAuth/AWSCognitoAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSCognitoAuth/AWSCognitoAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AWSCognitoAuth/AWSCognitoAuth.modulemap";
+				PRODUCT_MODULE_NAME = AWSCognitoAuth;
+				PRODUCT_NAME = AWSCognitoAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		216B9D82EA5510C38E5D11A060D83C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13FE6C9EC08F540A7DB1C5BEA40EE61 /* Pods-Nick_Frontend_YardWorkZone.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Nick_Frontend_YardWorkZone/Pods-Nick_Frontend_YardWorkZone-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Nick_Frontend_YardWorkZone/Pods-Nick_Frontend_YardWorkZone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38418DF48275C8A894A6806EFBE8ED84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88560B168CA03C974E3158964ABBD167 /* AWSCognitoIdentityProviderASF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.modulemap";
+				PRODUCT_MODULE_NAME = AWSCognitoIdentityProviderASF;
+				PRODUCT_NAME = AWSCognitoIdentityProviderASF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6211C405776D8AD3A7E351CC82140E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25199C822C1734762D1753B8522AFAFF /* AWSCognitoAuth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSCognitoAuth/AWSCognitoAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSCognitoAuth/AWSCognitoAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AWSCognitoAuth/AWSCognitoAuth.modulemap";
+				PRODUCT_MODULE_NAME = AWSCognitoAuth;
+				PRODUCT_NAME = AWSCognitoAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B5E0BA7610D15660BE0A9D4A1B4DBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88560B168CA03C974E3158964ABBD167 /* AWSCognitoIdentityProviderASF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.modulemap";
+				PRODUCT_MODULE_NAME = AWSCognitoIdentityProviderASF;
+				PRODUCT_NAME = AWSCognitoIdentityProviderASF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B2EDC33372F437D9015BDD8CA996BC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3AF6C16FB0388CD7F8F0B7D37DC1E84 /* Pods-Nick_Frontend_YardWorkZone.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Nick_Frontend_YardWorkZone/Pods-Nick_Frontend_YardWorkZone-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Nick_Frontend_YardWorkZone/Pods-Nick_Frontend_YardWorkZone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905B967F39FD1A19A559437C78956DDC /* Build configuration list for PBXNativeTarget "AWSCognitoIdentityProviderASF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B5E0BA7610D15660BE0A9D4A1B4DBFD /* Debug */,
+				38418DF48275C8A894A6806EFBE8ED84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABED9DBEF5EA7D620A9B313ECFF3F96D /* Build configuration list for PBXNativeTarget "AWSCognitoAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6211C405776D8AD3A7E351CC82140E29 /* Debug */,
+				0DC6F447FDDFD2EE0BDCD148020EFD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFD8C2B8DD6DE160321DED4076BBC38A /* Build configuration list for PBXNativeTarget "Pods-Nick_Frontend_YardWorkZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2EDC33372F437D9015BDD8CA996BC69 /* Debug */,
+				216B9D82EA5510C38E5D11A060D83C84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

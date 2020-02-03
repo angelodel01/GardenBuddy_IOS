@@ -60,5 +60,28 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>AWS</key>
+    <dict>
+       <key>CognitoUserPool</key>
+       <dict>
+           <key>Default</key>
+           <dict>
+               <key>CognitoAuthScopes</key>
+               <array>
+                   <string>openid</string>
+               </array>
+               <key>CognitoAuthSignInRedirectUri</key>
+               <string>myapp://gardenbuddysignin</string>
+               <key>CognitoAuthSignOutRedirectUri</key>
+               <string>myapp://gardenbuddysignin</string>
+               <key>CognitoAuthWebDomain</key>
+               <string>https://gardenbuddy.auth.us-east-1.amazoncognito.com</string>
+               <key>CognitoUserPoolAppClientId</key>
+               <string>5mnftelvv8acafjgfiah3h197m</string>
+               <key>CognitoUserPoolAppClientSecret</key>
+               <string>cpolhhknjdgrv7lun5lk861cvoj34kl4u2e0s9vdfa029ltcv</string>
+           </dict>
+       </dict>
+    </dict>
 </dict>
 </plist>
