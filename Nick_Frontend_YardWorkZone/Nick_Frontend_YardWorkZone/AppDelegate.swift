@@ -1,18 +1,26 @@
 //
 //  AppDelegate.swift
-//  GardenBuddy_FrontEnd1
+//  Nick_Frontend_YardWorkZone
 //
-//  Created by Nicholas Balestrino on 1/22/20.
+//  Created by Nicholas Balestrino on 1/27/20.
 //  Copyright © 2020 Misc. All rights reserved.
+//
+// http://aws.amazon.com/apache2.0
 //
 
 import UIKit
 import CoreData
+import AWSCognitoAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var window: UIWindow?
+    
+    //Need to let CognitoAuth handle redirects so it can extract tokens
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return AWSCognitoAuth.default().application(app, open: url, options: options)
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -42,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentCloudKitContainer(name: "GardenBuddy_FrontEnd1")
+        let container = NSPersistentCloudKitContainer(name: "Nick_Frontend_YardWorkZone")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

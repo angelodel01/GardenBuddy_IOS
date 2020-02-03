@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GardenBuddy_FrontEnd1.xcodeproj">
+      location = "self:Nick_Frontend_YardWorkZone.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  GardenBuddy_FrontEnd1
+//  Nick_Frontend_YardWorkZone
 //
-//  Created by Nicholas Balestrino on 1/22/20.
+//  Created by Nicholas Balestrino on 1/27/20.
 //  Copyright © 2020 Misc. All rights reserved.
 //
 

@@ -1,15 +1,15 @@
 //
-//  GardenBuddy_FrontEnd1Tests.swift
-//  GardenBuddy_FrontEnd1Tests
+//  Nick_Frontend_YardWorkZoneTests.swift
+//  Nick_Frontend_YardWorkZoneTests
 //
-//  Created by Nicholas Balestrino on 1/22/20.
+//  Created by Nicholas Balestrino on 1/27/20.
 //  Copyright © 2020 Misc. All rights reserved.
 //
 
 import XCTest
-@testable import GardenBuddy_FrontEnd1
+@testable import Nick_Frontend_YardWorkZone
 
-class GardenBuddy_FrontEnd1Tests: XCTestCase {
+class Nick_Frontend_YardWorkZoneTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

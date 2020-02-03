@@ -33,7 +33,6 @@ class ViewController: UITableViewController, AWSCognitoAuthDelegate {
         }
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if(self.firstLoad){
@@ -54,8 +53,6 @@ class ViewController: UITableViewController, AWSCognitoAuthDelegate {
         return 0
     }
     
-    
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
@@ -66,9 +63,6 @@ class ViewController: UITableViewController, AWSCognitoAuthDelegate {
         return cell
     }
     
-
-    
-
     func getBestToken() -> AWSCognitoAuthUserSessionToken? {
         if(self.session != nil){
             if((self.session?.idToken) != nil){
