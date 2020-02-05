@@ -174,7 +174,7 @@
 				TargetAttributes = {
 					EF5BA2431EDD247400CDD73E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = W3DRXD72QU;
+						DevelopmentTeam = 492UH2R9R8;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -433,10 +433,10 @@
 			baseConfigurationReference = 25F1892F88EDA8BDE69BF5D4 /* Pods-CognitoAuthSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W3DRXD72QU;
+				DEVELOPMENT_TEAM = 492UH2R9R8;
 				INFOPLIST_FILE = CognitoAuthSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.cognito.auth.CognitoAuthSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.amazonaws.cognito.auth.CognitoAuthSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -447,10 +447,10 @@
 			baseConfigurationReference = 1F05DA6FBFD6A102F7A9C410 /* Pods-CognitoAuthSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W3DRXD72QU;
+				DEVELOPMENT_TEAM = 492UH2R9R8;
 				INFOPLIST_FILE = CognitoAuthSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.cognito.auth.CognitoAuthSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.amazonaws.cognito.auth.CognitoAuthSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

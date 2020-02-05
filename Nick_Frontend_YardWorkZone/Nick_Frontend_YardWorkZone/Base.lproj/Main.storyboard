@@ -30,21 +30,21 @@
                                 <rect key="frame" x="0.0" y="111" width="414" height="751"/>
                                 <color key="backgroundColor" red="0.2027071308" green="0.46863865939999999" blue="0.69471206610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pfp-eH-cYa">
-                                    <size key="itemSize" width="218" height="153"/>
+                                    <size key="itemSize" width="220" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ihw-96-fM4" customClass="CollectionViewCell" customModule="Nick_Frontend_YardWorkZone" customModuleProvider="target">
-                                        <rect key="frame" x="98" y="0.0" width="218" height="153"/>
+                                        <rect key="frame" x="97" y="0.0" width="220" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lfE-P2-nen" customClass="CollectionViewCell" customModule="Nick_Frontend_YardWorkZone" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="218" height="153"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="220" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zone 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O1-Fa-HDT">
-                                                    <rect key="frame" x="72.5" y="8" width="73" height="24"/>
+                                                    <rect key="frame" x="73.5" y="8" width="73" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="rhm-0E-Hlq"/>
                                                     </constraints>
@@ -53,11 +53,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHc-Td-Kgp">
-                                                    <rect key="frame" x="60.5" y="55" width="97" height="43"/>
+                                                    <rect key="frame" x="61.5" y="55" width="97" height="50"/>
                                                     <state key="normal" title="Toggle On/Off"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Status: Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yk-ch-YQL">
-                                                    <rect key="frame" x="49" y="122" width="120" height="23"/>
+                                                    <rect key="frame" x="49" y="129" width="122" height="23"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -76,7 +76,7 @@
                                                 <constraint firstItem="0Yk-ch-YQL" firstAttribute="leading" secondItem="lfE-P2-nen" secondAttribute="leading" constant="49" id="zvI-Yw-B3p"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="218" height="153"/>
+                                        <size key="customSize" width="220" height="160"/>
                                         <connections>
                                             <outlet property="Label" destination="lfE-P2-nen" id="hwT-kD-MTo"/>
                                             <outlet property="Status" destination="0Yk-ch-YQL" id="7Vw-w9-RV4"/>
@@ -128,6 +128,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="collection" destination="ihw-96-fM4" id="Qaz-qj-aMR"/>
                         <outlet property="collectionview" destination="Diz-qV-koi" id="M0T-O1-s9a"/>
                         <outlet property="signInButton" destination="0j8-6r-aMG" id="2El-eL-RKM"/>
                         <outlet property="signOutButton" destination="S3n-fM-EHI" id="fwD-c6-2KD"/>

@@ -6,6 +6,7 @@
 //  Copyright © 2020 Misc. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import AWSCognitoAuth
 
@@ -13,6 +14,7 @@ class ViewController: UIViewController, UICollectionViewDelegate,
 UICollectionViewDataSource {
     
     //zones for each box
+    
     @IBOutlet weak var collectionview: UICollectionView!
     var collectionarr: [String] = ["1", "2", "3", "4"]
     let zone_titles = [("Zone 1"), ("Zone 2"), ("Zone 3"), ("Zone 4"), ("Zone 5"), ("Zone 6"), ("Zone 7"), ("Zone 8"), ("Zone 9"), ("Zone 10"), ("Zone 11"), ("Zone 12")]
@@ -26,7 +28,7 @@ UICollectionViewDataSource {
         collectionview.dataSource = self
         
         //sign in functionality
-        self.auth.delegate = self;
+        self.auth.delegate = self as? AWSCognitoAuthDelegate;
         if(self.auth.authConfiguration.appClientId.contains("SETME")){
             self.alertWithTitle("Error", message: "Info.plist missing necessary config under AWS->CognitoUserPool->Default")
         }
@@ -62,7 +64,7 @@ UICollectionViewDataSource {
         DispatchQueue.main.async {
             self.signInButton.isEnabled = self.session == nil
             self.signOutButton.isEnabled = self.session != nil
-            self.tableView.reloadData()
+            //self.tableView.reloadData()
             self.title = self.session?.username;
         }
     }
@@ -119,23 +121,23 @@ UICollectionViewDataSource {
         return self;
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let token = getBestToken()
-        if((token) != nil){
-            return token!.claims.count
-        }
-        return 0
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        let token = getBestToken()
+//       if((token) != nil){
+//            return token!.claims.count
+//        }
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let token = getBestToken()
-        let key = Array(token!.claims.keys)[indexPath.row]
-        cell.textLabel?.text = key as? String
-        cell.detailTextLabel?.text = (token!.claims[key] as AnyObject).description
-        return cell
-    }
+//        let token = getBestToken()
+//        let key = Array(token!.claims.keys)[indexPath.row]
+//        cell.textLabel?.text = key as? String
+//        cell.detailTextLabel?.text = (token!.claims[key] as AnyObject).description
+//        return cell
+//    }
     
     func getBestToken() -> AWSCognitoAuthUserSessionToken? {
         if(self.session != nil){
