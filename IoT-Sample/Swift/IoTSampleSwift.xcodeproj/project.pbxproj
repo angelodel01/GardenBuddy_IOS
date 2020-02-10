@@ -154,7 +154,7 @@
 				TargetAttributes = {
 					A6B39BB01BF3A93600045F73 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = W3DRXD72QU;
+						DevelopmentTeam = 5858F4ZHQS;
 						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -394,10 +394,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IoTSampleSwift/IoTSampleSwift.entitlements;
-				DEVELOPMENT_TEAM = W3DRXD72QU;
+				DEVELOPMENT_TEAM = 5858F4ZHQS;
 				INFOPLIST_FILE = IoTSampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.iot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.amazonaws;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -409,10 +409,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IoTSampleSwift/IoTSampleSwift.entitlements;
-				DEVELOPMENT_TEAM = W3DRXD72QU;
+				DEVELOPMENT_TEAM = 5858F4ZHQS;
 				INFOPLIST_FILE = IoTSampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.iot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.amazonaws;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;

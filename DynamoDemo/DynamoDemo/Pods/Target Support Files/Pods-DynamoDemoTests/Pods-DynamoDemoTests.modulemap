@@ -1,0 +1,6 @@
+framework module Pods_DynamoDemoTests {
+  umbrella header "Pods-DynamoDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

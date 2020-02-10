@@ -16,11 +16,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYh-Ec-GKZ">
-                                <rect key="frame" x="176" y="433" width="62" height="30"/>
+                                <rect key="frame" x="176" y="269" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="PUT"/>
                                 <connections>
                                     <action selector="putBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iat-Qv-Rmy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9y-uK-UkK">
+                                <rect key="frame" x="192" y="379" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="getBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="bDa-yh-ESd"/>
                                 </connections>
                             </button>
                         </subviews>
