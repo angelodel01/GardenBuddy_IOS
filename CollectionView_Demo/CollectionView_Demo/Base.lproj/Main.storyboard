@@ -94,6 +94,13 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75l-lO-pwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6Iq-Su-tpx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Item" id="Gou-kt-CfU"/>
+                    </items>
+                </toolbar>
             </objects>
             <point key="canvasLocation" x="182.60869565217394" y="-57.589285714285708"/>
         </scene>
