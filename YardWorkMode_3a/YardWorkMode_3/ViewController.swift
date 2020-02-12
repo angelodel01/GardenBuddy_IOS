@@ -26,7 +26,7 @@ class ViewController: UICollectionViewController {
     
     //collection button function
     @IBAction func goToPop(_ sender: UIButton) {
-        let popOverVC = UIStoryboard(name: "YardWorkArea", bundle: nil).instantiateViewController(identifier: "ButtonPopUp") as! PopUpView
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PopUp") as! PopUpView
         self.addChild(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
