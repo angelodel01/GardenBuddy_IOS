@@ -10,12 +10,16 @@ import UIKit
 
 class ViewController: UICollectionViewController {
     
+    var currentstatus = "Current Status: Off"
+
     @IBOutlet weak var connectionSwitch: UISwitch!
     
     let zone_titles = [("Zone 1"), ("Zone 2"), ("Zone 3"), ("Zone 4"), ("Zone 5"), ("Zone 6"), ("Zone 7"), ("Zone 8"), ("Zone 9"), ("Zone 10"), ("Zone 11"), ("Zone 12")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.hidesBackButton = true
             
         //navigation bar
         connectionSwitch.setOn(true, animated: true)
@@ -25,12 +29,19 @@ class ViewController: UICollectionViewController {
     }
     
     //collection button function
-    @IBAction func goToPop(_ sender: UIButton) {
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PopUp") as! PopUpView
-        self.addChild(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParent: self)
+    @IBAction func goToPop(_ sender: Any) {
+        print("moving")
+        self.performSegue(withIdentifier: "PopUpSegue", sender: self)
+    }
+    
+    @IBAction func unwindToMainCancel(_ sender: UIStoryboardSegue) {
+        print("maincancel")
+        print(currentstatus)
+    }
+    
+    @IBAction func unwindtoMainConfirm(_ sender: UIStoryboardSegue) {
+        print("mainconfirm")
+        print(currentstatus)
     }
     
     //navigation bar (top) setup
@@ -64,7 +75,7 @@ class ViewController: UICollectionViewController {
         let cellIndex = indexPath.item
                 
         cell.ZoneTitle.text = zone_titles[cellIndex]
-        cell.ZoneStatus.text = "Current Status: Off"
+        cell.ZoneStatus.text = currentstatus
         cell.ZoneToggle.setTitle("Toggle ON/OFF", for: .normal)
         
         return cell

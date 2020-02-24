@@ -12,25 +12,40 @@ class PopUpView: UIViewController {
     
     
     @IBOutlet weak var ZoneInput: UILabel!
-    @IBOutlet weak var Confirm: UIButton!
-    @IBOutlet weak var Cancel: UIButton!
     @IBOutlet weak var CountdownTimer: UIDatePicker!
     
     override func viewDidLoad() {
-           super.viewDidLoad()
+        super.viewDidLoad()
 
-           self.view.backgroundColor = UIColor.black
+        self.navigationItem.hidesBackButton = true
 
-           self.showAnimate()
+        self.view.backgroundColor = UIColor.black
+
+        self.showAnimate()
+    }
+    //cancel and confirm functions
+    //@IBAction func CancelOp(_ sender: UIButton) {
+        //self.removeAnimate()
+    //}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! ViewController
+
+        if segue.identifier == "unwindToMainConfirm" {
+            print("confirmed")
+            destVC.currentstatus = "Current Status: On"
+        }
+        else if segue.identifier == "unwindToMainCancel" {
+            print("cancelled")
+            destVC.currentstatus = "Current Status: Off"
+        }
+        else {
+            print("errorrrrr")
+        }
     }
     
-    @IBAction func CancelOp(_ sender: UIButton) {
-        self.removeAnimate()
-    }
-    
-    @IBAction func ConfirmOp(_ sender: UIButton) {
-        self.removeAnimate()
-    }
+    //@IBAction func ConfirmOp(_ sender: UIButton) {
+        //self.removeAnimate()
+    //}
     
     func showAnimate() {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
