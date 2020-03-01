@@ -38,7 +38,7 @@
                                                 <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
-                                                <segue destination="Prh-8e-BH4" kind="presentation" id="xOu-uH-Vl1"/>
+                                                <segue destination="Prh-8e-BH4" kind="presentation" identifier="popUpSegue" id="xOu-uH-Vl1"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIU-3u-qd1">
@@ -87,19 +87,24 @@
                         </connections>
                     </collectionView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="nfd-ss-cbr"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="ggN-cV-yiu">
-                        <barButtonItem key="rightBarButtonItem" id="fxJ-eo-tHh">
-                            <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="IJJ-hm-ufY">
-                                <rect key="frame" x="343" y="6.5" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                        </barButtonItem>
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="xtW-E8-YCv">
+                            <rect key="frame" x="56.5" y="5.5" width="301" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <segments>
+                                <segment title="Connected" width="150"/>
+                                <segment title="Not Connected" width="150"/>
+                            </segments>
+                            <connections>
+                                <action selector="connectTapped:" destination="kNI-cn-Wds" eventType="valueChanged" id="h2b-bL-M3Q"/>
+                            </connections>
+                        </segmentedControl>
                     </navigationItem>
                     <connections>
-                        <outlet property="connectionSwitch" destination="IJJ-hm-ufY" id="484-9u-Bim"/>
+                        <outlet property="connectOrNot" destination="xtW-E8-YCv" id="uhu-7C-v8L"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wE8-at-ORq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -236,15 +241,16 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B3n-gx-h6N" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="YardWork" image="sun.max.fill" catalog="system" selectedImage="sun.max.fill" id="UwZ-uK-hzM"/>
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hcp-AS-WJS">
+                    <navigationBar key="navigationBar" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hcp-AS-WJS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.91152442889999996" green="0.91152442889999996" blue="0.91152442889999996" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oSf-QP-IjU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="kNI-cn-Wds" kind="relationship" relationship="rootViewController" id="2ed-Co-2AB"/>
                     </connections>

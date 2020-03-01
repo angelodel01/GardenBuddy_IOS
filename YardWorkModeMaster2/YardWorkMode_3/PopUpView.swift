@@ -15,9 +15,16 @@ class PopUpView: UIViewController {
     @IBOutlet weak var ZoneInput: UILabel!
     @IBOutlet weak var CountdownTimer: UIDatePicker!
     
+
+    var zoneTop: String = ""
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ZoneInput.text = zoneTop
         self.navigationItem.hidesBackButton = true
+        
+        //self.ZoneInput.text = ZoneCollectionView.ZoneTitle.text
         
         popupArea.layer.cornerRadius = 15
         popupArea.layer.masksToBounds = true
@@ -37,21 +44,21 @@ class PopUpView: UIViewController {
     //@IBAction func CancelOp(_ sender: UIButton) {
         //self.removeAnimate()
     //}
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destVC = segue.destination as! ViewController
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //let destVC = segue.destination as! ViewController
 
-        if segue.identifier == "unwindToMainConfirm" {
-            print("confirmed")
-            destVC.currentstatus = "Current Status: On"
-        }
-        else if segue.identifier == "unwindToMainCancel" {
-            print("cancelled")
-            destVC.currentstatus = "Current Status: Off"
-        }
-        else {
-            print("errorrrrr")
-        }
-    }
+        //if segue.identifier == "unwindToMainConfirm" {
+          //  print("confirmed")
+            //destVC.currentstatus = "Current Status: On"
+        //}
+        //else if segue.identifier == "unwindToMainCancel" {
+            //print("cancelled")
+            //destVC.currentstatus = "Current Status: Off"
+        //}
+        //else {
+          //  print("errorrrrr")
+       // }
+    //}
    
     /*
     // MARK: - Navigation
