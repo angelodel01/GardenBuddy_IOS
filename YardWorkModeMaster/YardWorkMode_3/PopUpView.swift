@@ -12,31 +12,52 @@ class PopUpView: UIViewController {
     
     @IBOutlet weak var popupArea: UIView!
     
-    @IBOutlet weak var ZoneInput: UILabel!
-    @IBOutlet weak var CountdownTimer: UIDatePicker!
+    @IBOutlet weak var ZoneInput: UILabel?
     
-
-    var zoneTop: String = ""
-        
+    @IBOutlet weak var CountdownTimer: UIDatePicker!
+    var timerValue: Double = 0
+    var prevValue: Double = 0
+    
+    struct ZoneData {
+        var currentStatus: String
+        var zoneTitle: [String] = []
+        var zoneToggleButton: UIButton
+        var zoneToggleText: String
+    }
+    //var zoneData:
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ZoneInput.text = zoneTop
+        //ZoneInput?.text = zoneData?.zoneTitle
+        
+        CountdownTimer.addTarget(self, action: #selector(PopUpView.countdownChanged(CountdownTimer:)), for: UIControl.Event.valueChanged)
+    
         self.navigationItem.hidesBackButton = true
-        
-        //self.ZoneInput.text = ZoneCollectionView.ZoneTitle.text
-        
         popupArea.layer.cornerRadius = 15
         popupArea.layer.masksToBounds = true
     }
     
+    @objc func countdownChanged(CountdownTimer:UIDatePicker) {
+        let countdownFormat = NumberFormatter()
+        countdownFormat.numberStyle = NumberFormatter.Style.none
+        //let strCount = countdownFormat.string(from: NSNumber(value: CountdownTimer.countDownDuration))
+        //ZoneInput?.text = strCount
+    }
     
-    
+    //need to change status when confirm
     @IBAction func cancelPopUp(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    
+    //
     @IBAction func confirmPopUp(_ sender: Any) {
+        //duration clicked
+        timerValue = CountdownTimer.countDownDuration
+        print(timerValue)
+        //get zone title
+        //change status to "Current Status: On"
         dismiss(animated: true, completion: nil)
     }
     

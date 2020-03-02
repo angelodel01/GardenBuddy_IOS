@@ -26,8 +26,6 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     //changing connected or not
     @IBAction func connectTapped(_ sender: Any) {
         let index = connectOrNot.selectedSegmentIndex
-        print(index)
-        
         switch (index) {
         case 0:
             usedColor = connectedColor
@@ -59,8 +57,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //return zone_titles.count
-        return 12
+        return zones.zoneTitle.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -84,7 +81,18 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         return cell
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let selectedIndexPath = zones.zoneTitle[indexPath.item]
+        performSegue(withIdentifier: "popUpSegue", sender: selectedIndexPath)
+    }
+    
     //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       // guard let destination = segue.destination as? PopUpView,
+            //let index = collectionView.indexPathsForSelectedItems
+           // else {
+             //   return
+        //}
+        //destination.zoneData = zones[index]
         //if let destination = segue.destination as? PopUpView {
             //if let collectionView = self.collectionView,
             //let indexPath = collectionView.indexPathsForSelectedItems?.first,
@@ -93,5 +101,5 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             //let index = collectionView.cellForItem(at: IndexPath)
             //destination.zoneTop = cell.zoneTitle
        // }
-   // }
+    //}
 }
