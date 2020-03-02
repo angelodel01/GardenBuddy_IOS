@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var connectOrNot: UISegmentedControl!
+    var dataType: String = "Connected"
     
     @IBOutlet var collectView: UICollectionView!
     
@@ -30,20 +31,19 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let index = connectOrNot.selectedSegmentIndex
         switch (index) {
         case 0:
+            dataType = "Connected"
             usedColor = connectedColor
             collectView.backgroundColor = connectedColor
             //extra code possibly for more functionality
-            //zones.zoneToggleButton.setTitleColor(connectedColor, for: .normal)
             collectView.reloadData()
         case 1:
+            dataType = "Not Connected"
             usedColor = unconnectedColor
             collectView.backgroundColor = unconnectedColor
             //extra code possibly for more functionality
-            //zones.zoneToggleButton.setTitleColor(unconnectedColor, for: .normal)
             collectView.reloadData()
         default:
             usedColor = connectedColor
-            //zones.zoneToggleButton.setTitleColor(connectedColor, for: .normal)
         }
     }
     
@@ -84,6 +84,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let dest: PopUpView = self.storyboard?.instantiateViewController(withIdentifier: "PopUpView") as! PopUpView
         dest.zoneName = zones.zoneTitle[indexPath.row]
+        dest.connectionStatus = dataType
         self.navigationController?.pushViewController(dest, animated: true)
     }
     
