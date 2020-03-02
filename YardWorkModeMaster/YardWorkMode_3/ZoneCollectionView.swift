@@ -12,6 +12,6 @@ class ZoneCollectionView: UICollectionViewCell {
     
     @IBOutlet var ZoneTitle: UILabel!
     @IBOutlet var ZoneStatus: UILabel!
-    @IBOutlet var ZoneToggle: UIButton!
+    @IBOutlet var ZoneToggle: UILabel!
 
 }
