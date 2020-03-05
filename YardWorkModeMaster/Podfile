@@ -10,6 +10,5 @@ target 'YardWorkMode_3' do
   pod 'AWSDynamoDB', '~> 2.6.13'
   pod 'CalendarKit'
   pod 'SwiftSocket'
-  pod 'AWSIoT', $awsVersion
 
 end

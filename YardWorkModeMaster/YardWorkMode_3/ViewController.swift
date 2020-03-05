@@ -8,23 +8,41 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, PopUpViewDelegate {
     
     @IBOutlet weak var connectOrNot: UISegmentedControl!
-    var dataType: String = "Connected"
     
     @IBOutlet var collectView: UICollectionView!
     
     var connectedColor = UIColor(red: 0, green: 0.749, blue: 0, alpha: 1.0)
-    var unconnectedColor = UIColor(red: 0.65, green: 0, blue: 0, alpha: 1.0)
+    var unconnectedColor = UIColor(red: 0.392, green: 0.706, blue: 0.961, alpha: 1.0)
     var usedColor = UIColor(red: 0, green: 0.749, blue: 0, alpha: 1.0)
+    
+    //data transfer variables
+    var zonetimes: [Double] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] //list of zone times
+    var dataType: String = "Connected"
+    
+    //increment timerValue down
+    //var timerLatestProduct = [Int:Timer]()
+    //var timerCount:NSMutableArray = [0,0,0,0,0,0,0,0,0,0,0,0]
+    //var timer = [Timer()]
+    
+    //struct of a cell in collection view
+    struct ZoneData {
+        var currentStatus: [String] = []
+        var zoneTitle: [String] = []
+        var zoneToggleText: String
+    }
+    
+    var zones = ZoneData(currentStatus: [("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off"), ("Current Status: Off")], zoneTitle: [("Zone 1"), ("Zone 2"), ("Zone 3"), ("Zone 4"), ("Zone 5"), ("Zone 6"), ("Zone 7"), ("Zone 8"), ("Zone 9"), ("Zone 10"), ("Zone 11"), ("Zone 12")], zoneToggleText: "Toggle On / Off")
+    
     
     override func viewDidLoad() {
         collectView.backgroundColor = connectedColor
 
         super.viewDidLoad()
-        //self.navigationItem.hidesBackButton = true
-       }
+        //dynamoGet() for angelo when merging
+    }
     
     //changing connected or not
     @IBAction func connectTapped(_ sender: Any) {
@@ -46,16 +64,6 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             usedColor = connectedColor
         }
     }
-    
-    //struct of a cell in collection view
-    struct ZoneData {
-        var currentStatus: String
-        var zoneTitle: [String] = []
-        var zoneToggleText: String
-    }
-    
-    var zones = ZoneData(currentStatus: "Current Status: Off", zoneTitle: [("Zone 1"), ("Zone 2"), ("Zone 3"), ("Zone 4"), ("Zone 5"), ("Zone 6"), ("Zone 7"), ("Zone 8"), ("Zone 9"), ("Zone 10"), ("Zone 11"), ("Zone 12")], zoneToggleText: "Toggle On / Off")
-    
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return zones.zoneTitle.count
@@ -72,68 +80,77 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         cell.ZoneToggle.textColor = usedColor
                 
         //cell info
-        cell.ZoneTitle.text = zones.zoneTitle[indexPath.row]
-        cell.ZoneStatus.text = zones.currentStatus
+        cell.ZoneTitle.text = zones.zoneTitle[indexPath.item]
         cell.ZoneToggle.text = zones.zoneToggleText
-                
+        cell.ZoneStatus.text = zones.currentStatus[indexPath.item]
+        
+        if cell.ZoneStatus.text == "Current Status: On" {
+            cell.ZoneStatus.font = UIFont(name: "Helvetica Neue Condensed Black", size: 16)
+            cell.ZoneStatus.textColor = usedColor
+            cell.ZoneTitle.textColor = usedColor
+        }
+        if cell.ZoneStatus.text == "Current Status: Off" {
+            cell.ZoneStatus.font = UIFont(name: "Helvetica Neue", size: 15)
+            cell.ZoneStatus.textColor = UIColor.black
+            cell.ZoneTitle.textColor = UIColor.black
+        }
+        
         return cell
     }
     
     
-    //works
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let dest: PopUpView = self.storyboard?.instantiateViewController(withIdentifier: "PopUpView") as! PopUpView
-        dest.zoneName = zones.zoneTitle[indexPath.row]
-        dest.connectionStatus = dataType
-        self.navigationController?.pushViewController(dest, animated: true)
+    //func timeCountdown(on: Bool) {
+       //var i: Int = 0
+       //timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (_) in
+           //parse through zonetimes list
+         //  let list = self.zonetimes
+           //for i in list {
+             //  if (self.zonetimes[Int(i)] == 0) {
+               //     self.currentStatusUpdate(type: "Current Status: Off", num: Int(i))
+                 //   continue
+               //}
+               //then the timer is running
+               //else {
+                   //continue
+               //}
+           //}
+       //})
+    //}
+    
+    
+    //passing data between section with segue / delegate
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let childVC = segue.destination as! PopUpView
+        childVC.delegate = self
+        
+        if let indexPath = self.collectionView.indexPath(for: sender as! ZoneCollectionView) {
+            childVC.zoneName = zones.zoneTitle[indexPath.item] //cell zone #
+            childVC.connectionStatus = dataType        //Connected/NotConnected
+            childVC.currentOnOff = zones.currentStatus[indexPath.item] //current on/off status
+            childVC.zonetimes = zonetimes      //pass back and forth zonetimes with timevalues stored
+        }
     }
     
-    //connected mqtt - disconnect tcp
-    //connection needs to send with case funct
+    func currentStatusUpdate(type: String, num: Int) {
+        let x = num - 1 //get index value of currentstatus list
+        zones.currentStatus[x] = type
+        self.collectionView.reloadData()
+        print(zones.currentStatus)
+    }
     
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      //  if segue.destination is PopUpView {
-        //    let vc = segue.destination as? PopUpView
-           // cellIndex = indexPath.item
-           // vc?.zoneName = zones.zoneTitle[cellIndex]
-        
-            //if let cell = sender as? UICollectionViewCell,
-                //let indexPath = collectionView.indexPath(for: cell) {
-                //let cellIndex = indexPath.item
-                
-                //let destination = segue.destination as! PopUpView
-                //destination.zoneName = zones.zoneTitle[cellIndex]
-            //}
-       // }
-    //}
+    func zoneTimerUpdate(list: [Double]) {
+        zonetimes = list
+        print(zonetimes)
+    }
     
-   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     //   if segue.identifier == "popUpSegue" {
-       //     print("0")
-         //   var destination = segue.destination as! PopUpView
-
-           // if let index = collectionView.indexPathsForSelectedItems {
-             //   destination.ZoneData
-                //let selectedItem = self.zones[itemIndex]
-                // do here what you need
-           // }
-        //}
-    //}
-    
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       // guard let destination = segue.destination as? PopUpView,
-            //let index = collectionView.indexPathsForSelectedItems
-           // else {
-             //   return
-        //}
-        //destination.zoneData = zones[index]
-        //if let destination = segue.destination as? PopUpView {
-            //if let collectionView = self.collectionView,
-            //let indexPath = collectionView.indexPathsForSelectedItems?.first,
-            //let cell = collectionView.cellForItem(at: indexPath) as? ZoneCollectionView ,
-            //let zoneTop = cell.ZoneTitle
-            //let index = collectionView.cellForItem(at: IndexPath)
-            //destination.zoneTop = cell.zoneTitle
-       // }
+    //works to send data
+    //override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //let dest: PopUpView = self.storyboard?.instantiateViewController(withIdentifier: "PopUpView") as! PopUpView
+        //dest.zoneName = zones.zoneTitle[indexPath.item] //cell zone #
+        //dest.connectionStatus = dataType        //Connected/NotConnected
+        //dest.currentOnOff = zones.currentStatus[indexPath.item] //current on/off status
+        //dest.zonetimes = zonetimes      //pass back and forth zonetimes with timevalues stored
+        //self.navigationController?.pushViewController(dest, animated: true)
     //}
 }

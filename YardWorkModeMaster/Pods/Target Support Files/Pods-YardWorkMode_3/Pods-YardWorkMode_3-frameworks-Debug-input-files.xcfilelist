@@ -2,7 +2,6 @@ ${PODS_ROOT}/Target Support Files/Pods-YardWorkMode_3/Pods-YardWorkMode_3-framew
 ${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework
 ${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework
 ${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework
-${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework
 ${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework
 ${BUILT_PRODUCTS_DIR}/CalendarKit/CalendarKit.framework
 ${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework

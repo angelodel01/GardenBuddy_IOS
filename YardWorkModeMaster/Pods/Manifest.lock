@@ -4,8 +4,6 @@ PODS:
   - AWSCore (2.6.35)
   - AWSDynamoDB (2.6.35):
     - AWSCore (= 2.6.35)
-  - AWSIoT (2.6.35):
-    - AWSCore (= 2.6.35)
   - AWSMobileClient (2.6.35):
     - AWSAuthCore (= 2.6.35)
   - CalendarKit (0.13.0):
@@ -17,7 +15,6 @@ PODS:
 
 DEPENDENCIES:
   - AWSDynamoDB (~> 2.6.13)
-  - AWSIoT
   - AWSMobileClient (~> 2.6.13)
   - CalendarKit
   - SwiftSocket
@@ -27,7 +24,6 @@ SPEC REPOS:
     - AWSAuthCore
     - AWSCore
     - AWSDynamoDB
-    - AWSIoT
     - AWSMobileClient
     - CalendarKit
     - DateToolsSwift
@@ -38,13 +34,12 @@ SPEC CHECKSUMS:
   AWSAuthCore: 386e045a341acebf2409425467e907ae1a45ed63
   AWSCore: 2dab62ef2e5ca5d8c72c6cbdb3a6ea1532c27c2b
   AWSDynamoDB: f4902fc37384dcf9547e2d8a32a5b208d4d1d996
-  AWSIoT: c5deed4e2488e55d00554eca75e52f5d5ececd7b
   AWSMobileClient: f89a36e0d95fc354a9d3b50d347371788c542449
   CalendarKit: 25acd9ca18d0c9adb33716675ae19a74440c8403
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
   Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: f1d8630b54ba0e4e932890763987736707297f5f
+PODFILE CHECKSUM: 1753f702ed4d7f07f17acb956f5b067ddb2381bf
 
 COCOAPODS: 1.8.4

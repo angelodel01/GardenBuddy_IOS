@@ -8,85 +8,125 @@
 
 import UIKit
 import SwiftSocket
-import AWSIoT
+
+protocol PopUpViewDelegate: NSObjectProtocol {
+    func zoneTimerUpdate(list: [Double])
+    func currentStatusUpdate(type: String, num: Int)
+}
 
 class PopUpView: UIViewController {
     
+    // TCP STUFF !!!
     let host = "192.168.43.78"    // 192.168.43.78 192.168.43.121
     let port = 7                  // 7
     var client: TCPClient?
     
-//    let iotDataManager = AWSIoTDataManager(forKey: ASWIoTDataManager)
-//    let tabBarViewController = tabBarController as! IoTSampleTabBarController
-    
     @IBOutlet weak var popupArea: UIView!
     
     @IBOutlet weak var connectOrNot: UILabel! //mqtt or tcp
-    
     @IBOutlet weak var ZoneInput: UINavigationItem! //zone #
     
     @IBOutlet weak var CountdownTimer: UIDatePicker!
-    
+    var isTimerOn = false
     var timerValue: Double = 0
     var prevValue: Double = 0
+    var zonetimes: [Double] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] //list of all zone times
+    var zoneNumb: String = ""
+    var zoneInt: Int = 0
+
     
-    var zoneToggleText: String = ""
-    var connectionStatus: String = ""
+    var connectionStatus: String = "" //Connected/NotConnected
+    var currentOnOff: String = "" //"Curren Status: On/Off
+    var zoneName = "Idk zone"   //"Zone 1"
     
-    var zoneName = "Idk zone"
-    
+    weak var delegate: PopUpViewDelegate?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ZoneInput.title! = zoneName
-        connectOrNot.text = connectionStatus
+        ZoneInput.title! = zoneName            //gets Zone from prev controller
+        connectOrNot.text = connectionStatus    //gets status from prev
+        
+        //on this screen, toggle countdown
+        isTimerOn.toggle()
         
         CountdownTimer.addTarget(self, action: #selector(PopUpView.countdownChanged(CountdownTimer:)), for: UIControl.Event.valueChanged)
-    
-        //self.navigationItem.hidesBackButton = true
-        popupArea.layer.cornerRadius = 15
-        //popupArea.layer.masksToBounds = true
         
-        // TCPClient
+        popupArea.layer.masksToBounds = true
+        
+        // TCP STUFF !!!
         client = TCPClient(address: host, port: Int32(port))
+    }
+        
+    
+    func getZoneForZoneTimes(string: String) -> String {
+        var zoneFinal = ""
+        if let index = string.firstIndex(of: " ") {
+            let zoneNumbTemp = string[index...]
+            zoneFinal = String(zoneNumbTemp)
+        }
+        return zoneFinal
     }
     
     @objc func countdownChanged(CountdownTimer:UIDatePicker) {
         let countdownFormat = NumberFormatter()
         countdownFormat.numberStyle = NumberFormatter.Style.none
-        //let strCount = countdownFormat.string(from: NSNumber(value: CountdownTimer.countDownDuration))
-        //ZoneInput?.text = strCount
     }
+    
     @IBAction func turnOff(_ sender: Any) {
         timerValue = 0.0
+        //print(timerValue)
+        //print(zoneName)
         let zone_n = caseZone()
-        
-        if (connectionStatus == "Connected") {  // MQTT
+        if (connectionStatus == "Connected") {
             print("It's MQTT")
         }
-        else {                                  // TCP
+        else {
             TCPconnection(zone_number: zone_n)
         }
-        //current status: off
+        currentOnOff = "Current Status: Off"
+        
+        zoneNumb = getZoneForZoneTimes(string: zoneName)
+        zoneNumb.removeFirst()
+        zoneInt = Int(zoneNumb) ?? -1
+
+        //put timervalue into array of zonetimes
+        zonetimes[zoneInt-1] = timerValue
+        //print(zonetimes)
+        //print("")
+        
+        //send data back
+        delegate?.currentStatusUpdate(type: currentOnOff, num: zoneInt)
+        delegate?.zoneTimerUpdate(list: zonetimes)
         self.navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func confirmPopUp(_ sender: Any) {
-        //duration clicked
         timerValue = CountdownTimer.countDownDuration
+        //print(timerValue)
+        //print(zoneName)     //zone number
         let zone_n = caseZone()
-        
-        if (connectionStatus == "Connected") {  // MQTT
+        if (connectionStatus == "Connected") {
             print("It's MQTT")
         }
-        else {                                  // TCP
+        else {
             TCPconnection(zone_number: zone_n)
         }
-        //get zone title
-        //change status to "Current Status: On"
+        currentOnOff = "Current Status: On" //status
+        
+        zoneNumb = getZoneForZoneTimes(string: zoneName)
+        zoneNumb.removeFirst()
+        zoneInt = Int(zoneNumb) ?? -1
+
+        //put timervalue into array of zonetimes
+        zonetimes[zoneInt-1] = timerValue   //timervalue stored
+        //print(zonetimes)
+        //print("")
+        
+        //send data back
+        delegate?.currentStatusUpdate(type: currentOnOff, num: zoneInt)
+        delegate?.zoneTimerUpdate(list: zonetimes)
         self.navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
     }
     
     private func TCPconnection(zone_number: Int) {
@@ -148,9 +188,6 @@ class PopUpView: UIViewController {
         total += ((string.count) / len)
         while counter < total {
             guard let response = client.read(len, timeout: 5) else {
-//                let alert = UIAlertController(title: "Alert", message: "readResponse is nil", preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
-//                self.present(alert, animated: true, completion: nil)
                 print("readResponse is nil")
                 return nil
             }
@@ -166,21 +203,12 @@ class PopUpView: UIViewController {
       switch client.send(string: string) {
       case .success:
         print("succeed.")
-        return readResponse(from: client, string: string)
+        //return readResponse(from: client, string: string)
+        return "good enough."
       case .failure(let error):
         print("failed.")
         print(String(describing: error))
         return nil
       }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
