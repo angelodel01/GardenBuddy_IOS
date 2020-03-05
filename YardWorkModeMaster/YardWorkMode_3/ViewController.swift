@@ -41,7 +41,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         collectView.backgroundColor = connectedColor
 
         super.viewDidLoad()
-        //dynamoGet() for angelo when merging
+        dynamoGet() //for angelo when merging
     }
     
     //changing connected or not
@@ -63,6 +63,12 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         default:
             usedColor = connectedColor
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = view.frame.size.height
+        let width = view.frame.size.width
+        return CGSize(width: width * 0.42, height: height * 0.23)
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

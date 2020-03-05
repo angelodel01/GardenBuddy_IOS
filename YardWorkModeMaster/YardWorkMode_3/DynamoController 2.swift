@@ -10,18 +10,22 @@ import Foundation
 import AWSDynamoDB
 
 func dynamoPut(uid:String){
+    let typ: TYPE = TYPE.USR; let trig = TRIGGER_TYPE.MID
+    let m = Mod(date: "01-01-2020", time_offset: 1, duration: 1, type: typ)
+    let E = GB_Event(zone_num: 1, trigger_type: trig, time_offset: 1, duration: 3600, mods: [m])
+    let E2 = GB_Event(zone_num: 1, trigger_type: trig, time_offset: 3600*5, duration: 3600, mods: [m])
+    let S = Schedule(sun:[E], mon:[E], tue:[E], wed:[E, E2], thu:[E], fri:[E], sat:[E])
     let sched: schedules = schedules()
-    sched._sched = Schedule.Master!.convertToJSON()
-    print("About to send:\n\(sched._sched!)")
-    sched._uid = uid;
+    sched._sched = S.convertToJSON() //m.convertToJSONString();
+    sched._uid = "100";
     createTableEntry(sched: sched);
 }
 func dynamoGet(){
+    var resp : [String : Any]
     getTableEntry(key: "100")
 }
 
 func createTableEntry(sched: schedules) {
-    print("                 TRYING TO CREATE TABLE ENTRY")
     let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
     //Save a new item
     dynamoDbObjectMapper.save(sched, completionHandler: {
@@ -56,10 +60,11 @@ func getTableEntry(key : String){
             for sched in output!.items {
                 let curr = sched as? schedules
                 let resp = curr!._sched!
-//                print("response : \(resp)")
+                print("response : \(resp)")
                 processResp(resp: resp)
-//                print("parsed into object : ", Schedule.Master!.sun[0].trigger_type)
+                print("parsed into object : ", Schedule.Master!.sun[0].trigger_type)
             }
+            
         }
     }
 }

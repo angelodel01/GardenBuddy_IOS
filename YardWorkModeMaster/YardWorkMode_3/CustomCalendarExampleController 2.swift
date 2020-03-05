@@ -2,12 +2,12 @@ import UIKit
 import CalendarKit
 import DateToolsSwift
 
-class CustomCalendarExampleController: DayViewController, DatePickerControllerDelegate, UIViewControllerTransitioningDelegate {
+class CustomCalendarExampleController: DayViewController, DatePickerControllerDelegate {
   var currentStyle = SelectedStyle.Light
   
   lazy var customCalendar: Calendar = {
     let customNSCalendar = NSCalendar(identifier: NSCalendar.Identifier.gregorian)!
-    customNSCalendar.timeZone = TimeZone(abbreviation: "PST")!
+    customNSCalendar.timeZone = TimeZone(abbreviation: "CEST")!
     let calendar = customNSCalendar as Calendar
     return calendar
   }()
@@ -16,8 +16,7 @@ class CustomCalendarExampleController: DayViewController, DatePickerControllerDe
     calendar = customCalendar
     dayView = DayView(calendar: calendar)
     view = dayView
-//    dynamoGet()
-//    dynamoPut(uid: "11")
+    dynamoGet()
   }
   
   override func viewDidLoad() {
@@ -58,7 +57,10 @@ class CustomCalendarExampleController: DayViewController, DatePickerControllerDe
   
   @objc func presentDatePicker() {
     let picker = DatePickerController()
-    picker.datePicker.timeZone = TimeZone(secondsFromGMT: TimeZone.current.secondsFromGMT())!
+    //    let calendar = dayView.calendar
+    //    picker.calendar = calendar
+    //    picker.date = dayView.state!.selectedDate
+    picker.datePicker.timeZone = TimeZone(secondsFromGMT: 0)!
     picker.delegate = self
     let navC = UINavigationController(rootViewController: picker)
     navigationController?.present(navC, animated: true, completion: nil)
@@ -67,7 +69,7 @@ class CustomCalendarExampleController: DayViewController, DatePickerControllerDe
   func datePicker(controller: DatePickerController, didSelect date: Date?) {
     if let date = date {
       var utcCalendar = Calendar(identifier: .gregorian)
-      utcCalendar.timeZone = TimeZone(secondsFromGMT: TimeZone.current.secondsFromGMT())!
+      utcCalendar.timeZone = TimeZone(secondsFromGMT: 0)!
       
       let offsetDate = dateOnly(date: date, calendar: dayView.calendar)
       
@@ -93,7 +95,6 @@ class CustomCalendarExampleController: DayViewController, DatePickerControllerDe
   }
   
     override func eventsForDate(_ date: Date) -> [EventDescriptor] {
-        dynamoGet()
         if (Schedule.Master != nil){
             let events = Schedule.Master!.translateToDisplay(date)
             return events
@@ -150,83 +151,7 @@ class CustomCalendarExampleController: DayViewController, DatePickerControllerDe
     // Cancel editing current event and start creating a new one
     endEventEditing()
     print("Creating a new event")
-    makeNewEvent(date: date)
-//    Schedule.masterUpdate();
   }
-    func cancel(){
-        print("cancelled making event")
-    }
-    
-    
-    func createNewEvent(sender: AnyObject, date: Date) {
-        print("clicked createNewEvent")
-        //1. Create the alert controller.
-        let alert = UIAlertController(title: "Creating Event", message: "", preferredStyle: .alert)
-
-//        let dialogMessage = UIAlertController(title: "New Room", message: nil, preferredStyle: .alert)
-        let label = UILabel(frame: CGRect(x: 0, y: 40, width: 270, height:18))
-        label.textAlignment = .center
-        label.textColor = .red
-        label.font = label.font.withSize(12)
-        alert.view.addSubview(label)
-        label.isHidden = true
-        //2. Add the text field. You can configure it however you need.
-        alert.addTextField { (textField) in
-            textField.placeholder = "Zone Number"
-            textField.keyboardType = .numberPad
-        }
-
-        alert.addTextField { (textField) in
-            textField.placeholder = "Duration in minutes"
-            textField.keyboardType = .numberPad
-        }
-
-        // 3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-            let zone_num = alert?.textFields![0] // Force unwrapping because we know it exists.
-            let duration = alert?.textFields![1] // Force unwrapping because we know it exists.
-            if (Int(zone_num!.text!)! > 12 || Int(zone_num!.text!)! < 0){
-                label.text = ""
-                label.text = "Invalid zone number"
-                label.isHidden = false
-                self.present(alert!, animated: true, completion: nil)
-            } else if (Int(duration!.text!)! > 1440){
-                label.text = ""
-                label.text = "Duration more than a day"
-                label.isHidden = false
-                self.present(alert!, animated: true, completion: nil)
-            } else{
-                let g_event:GB_Event = GB_Event(
-                    zone_num: Int(zone_num!.text!) ?? 0,
-                    trigger_type: TRIGGER_TYPE.MID,
-                    time_offset : 0,
-                    duration : Int(duration!.text!)!*60,
-                    mods : [])
-                g_event.time_offset = GB_Event.getMidNightOffset(date: date);
-                Schedule.Master!.addGBEvent(new: g_event, date: date)
-                self.reloadData()
-            }
-
-        }))
-        // 4. Present the alert.
-        self.present(alert, animated: true, completion: nil)
-        
-    }
-    
-    func makeNewEvent(date: Date){
-        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-
-
-        alert.addAction(UIAlertAction(title: "Create New Event", style: .default) { _ in
-            self.createNewEvent(sender: self, date: date)
-        })
-
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default) { _ in
-            self.cancel()
-        })
-
-        present(alert, animated: true)
-    }
 
   
   override func dayView(dayView: DayView, didUpdate event: EventDescriptor) {
@@ -234,8 +159,7 @@ class CustomCalendarExampleController: DayViewController, DatePickerControllerDe
     
     if let _ = event.editedEvent {
       event.commitEditing()
-      Schedule.updateEvent(startDate:event.startDate, endDate: event.endDate, eventInfo: event as! Event)
-      endEventEditing()
+        Schedule.updateEvent(startDate:event.startDate, endDate: event.endDate, eventInfo: event as! Event)
       print("commitEditing()")
     }
     
@@ -246,7 +170,6 @@ class CustomCalendarExampleController: DayViewController, DatePickerControllerDe
       print("endEventEditing()")
     }
     print("did finish editing \(event)")
-//    dynamoPut(uid: "100")
     reloadData()
   }
 }
