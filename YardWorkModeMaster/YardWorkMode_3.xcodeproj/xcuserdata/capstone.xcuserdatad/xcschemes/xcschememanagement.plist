@@ -3,23 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
-	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>111631CE23F21A2A00CDFAA4</key>
+		<key>YardWorkMode_3.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>111631E723F21A2C00CDFAA4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>111631F223F21A2C00CDFAA4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
+			<key>orderHint</key>
+			<integer>11</integer>
 		</dict>
 	</dict>
 </dict>

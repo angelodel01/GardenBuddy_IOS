@@ -26,8 +26,7 @@
 		11B79D3724048FAE00C0CB43 /* CustomCalendarExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B79D2924048FAE00C0CB43 /* CustomCalendarExampleController.swift */; };
 		11B79D3924048FAF00C0CB43 /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B79D2B24048FAE00C0CB43 /* DatePickerController.swift */; };
 		11B79D3A24048FAF00C0CB43 /* StyleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B79D2C24048FAE00C0CB43 /* StyleGenerator.swift */; };
-		79D67439240CCAE100CC35DF /* YardWorkZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D67438240CCAE100CC35DF /* YardWorkZone.swift */; };
-		79D6743C240CD5E500CC35DF /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D6743B240CD5E500CC35DF /* SwiftSocket.framework */; };
+		7970D5F0240DD0DF00317D40 /* YardWorkZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7970D5EF240DD0DF00317D40 /* YardWorkZone.swift */; };
 		C0B39C14E7FA7E2FF907CD70 /* Pods_YardWorkMode_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF0192D1C50889A9960FCB9 /* Pods_YardWorkMode_3.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +76,7 @@
 		11B79D3B2404930A00C0CB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/CalendarApp 2/CalendarApp/Assets.xcassets"; sourceTree = "<group>"; };
 		2DF0192D1C50889A9960FCB9 /* Pods_YardWorkMode_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardWorkMode_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		416AE2454AA67AE1C0650469 /* Pods-YardWorkMode_3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardWorkMode_3.debug.xcconfig"; path = "Target Support Files/Pods-YardWorkMode_3/Pods-YardWorkMode_3.debug.xcconfig"; sourceTree = "<group>"; };
-		79D67438240CCAE100CC35DF /* YardWorkZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardWorkZone.swift; sourceTree = "<group>"; };
-		79D6743B240CD5E500CC35DF /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7970D5EF240DD0DF00317D40 /* YardWorkZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardWorkZone.swift; sourceTree = "<group>"; };
 		8DA576A5AD4AAF117C3B9A6F /* Pods-YardWorkMode_3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardWorkMode_3.release.xcconfig"; path = "Target Support Files/Pods-YardWorkMode_3/Pods-YardWorkMode_3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +86,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B39C14E7FA7E2FF907CD70 /* Pods_YardWorkMode_3.framework in Frameworks */,
-				79D6743C240CD5E500CC35DF /* SwiftSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +137,6 @@
 				11B79D2324048FAE00C0CB43 /* DynamoController.swift */,
 				11B79D2424048FAE00C0CB43 /* schedules.swift */,
 				11B79D2524048FAE00C0CB43 /* ExampleNotificationController.swift */,
-				79D67438240CCAE100CC35DF /* YardWorkZone.swift */,
 				11B79D2624048FAE00C0CB43 /* ExampleController.swift */,
 				11B79D2C24048FAE00C0CB43 /* StyleGenerator.swift */,
 				11B79D2B24048FAE00C0CB43 /* DatePickerController.swift */,
@@ -150,6 +146,7 @@
 				111631D823F21A2A00CDFAA4 /* Main.storyboard */,
 				111631D623F21A2A00CDFAA4 /* ViewController.swift */,
 				1116320923F4A33500CDFAA4 /* PopUpView.swift */,
+				7970D5EF240DD0DF00317D40 /* YardWorkZone.swift */,
 				1116320723F225D600CDFAA4 /* ZoneCollectionView.swift */,
 				111631E023F21A2C00CDFAA4 /* LaunchScreen.storyboard */,
 				111631E323F21A2C00CDFAA4 /* Info.plist */,
@@ -188,7 +185,6 @@
 		7AAC72AAAEEC851AC65BB045 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79D6743B240CD5E500CC35DF /* SwiftSocket.framework */,
 				2DF0192D1C50889A9960FCB9 /* Pods_YardWorkMode_3.framework */,
 			);
 			name = Frameworks;
@@ -369,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D67439240CCAE100CC35DF /* YardWorkZone.swift in Sources */,
+				7970D5F0240DD0DF00317D40 /* YardWorkZone.swift in Sources */,
 				11B79D3424048FAE00C0CB43 /* ExampleController.swift in Sources */,
 				11B79D3A24048FAF00C0CB43 /* StyleGenerator.swift in Sources */,
 				111631D723F21A2A00CDFAA4 /* ViewController.swift in Sources */,
