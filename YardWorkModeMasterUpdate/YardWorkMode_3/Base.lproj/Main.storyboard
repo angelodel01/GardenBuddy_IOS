@@ -31,12 +31,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Status: Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIU-3u-qd1">
-                                            <rect key="frame" x="22" y="130" width="126" height="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Status: On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIU-3u-qd1">
+                                            <rect key="frame" x="27" y="130" width="116" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="od5-lk-J5e"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Luminari-Regular" family="Luminari" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -79,6 +79,7 @@
                                     <outlet property="ZoneStatus" destination="qIU-3u-qd1" id="MWd-EU-0kP"/>
                                     <outlet property="ZoneTitle" destination="bio-e2-IrL" id="tUv-v6-dzk"/>
                                     <outlet property="ZoneToggle" destination="oKw-h1-X0W" id="lm1-xr-4m7"/>
+                                    <segue destination="Prh-8e-BH4" kind="show" identifier="" id="KAv-eM-YHD"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -148,7 +149,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ConnectOrNot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCH-g6-247">
-                                <rect key="frame" x="143" y="84" width="128" height="24"/>
+                                <rect key="frame" x="143" y="128" width="128" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
