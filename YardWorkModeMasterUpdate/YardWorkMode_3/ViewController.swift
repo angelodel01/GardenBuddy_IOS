@@ -15,7 +15,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     @IBOutlet var collectView: UICollectionView!
     
     var connectedColor = UIColor(red: 0, green: 0.749, blue: 0, alpha: 1.0)
-    var unconnectedColor = UIColor(red: 0.65, green: 0, blue: 0, alpha: 1.0)
+    var unconnectedColor = UIColor(red: 0, green: 0.34, blue: 0.1, alpha: 1.0)
     var usedColor = UIColor(red: 0, green: 0.749, blue: 0, alpha: 1.0)
     
     //data transfer variables
@@ -23,9 +23,6 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     var dataType: String = "Connected"
     
     //increment timerValue down
-    //var timerLatestProduct = [Int:Timer]()
-    //var timerCount:NSMutableArray = [0,0,0,0,0,0,0,0,0,0,0,0]
-    //var timer = [Timer()]
     
     //struct of a cell in collection view
     struct ZoneData {
@@ -63,6 +60,13 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         default:
             usedColor = connectedColor
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = view.frame.size.height
+        let width = view.frame.size.width
+        // in case you you want the cell to be 40% of your controllers view
+        return CGSize(width: width * 0.42, height: height * 0.23)
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

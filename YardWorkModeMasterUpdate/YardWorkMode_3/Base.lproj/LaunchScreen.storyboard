@@ -15,24 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to GardenBuddy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-mC-FOe">
-                                <rect key="frame" x="41.5" y="144" width="330" height="243.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to GardenBuddy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-mC-FOe">
+                                <rect key="frame" x="42" y="144" width="330" height="400"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="GBLogo1024" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="058-dU-nNn">
-                                <rect key="frame" x="70" y="438" width="275" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GBLogo1024" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="058-dU-nNn">
+                                <rect key="frame" x="69.5" y="582" width="275" height="200"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Szp-dU-Bkl"/>
+                                    <constraint firstAttribute="width" constant="275" id="jG1-fw-iR4"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.19279769059999999" green="0.7160279155" blue="0.26529982689999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7Bb-mC-FOe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="1CN-Gg-l8V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Bb-mC-FOe" secondAttribute="trailing" constant="42.490000000000002" id="I11-kV-Urd"/>
-                            <constraint firstItem="058-dU-nNn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="VaW-Xf-fgD"/>
-                            <constraint firstItem="7Bb-mC-FOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41.509999999999998" id="lQ3-Ur-uua"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="058-dU-nNn" secondAttribute="trailing" constant="69" id="zdZ-nu-SHJ"/>
+                            <constraint firstItem="058-dU-nNn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AmA-c0-wWM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Bb-mC-FOe" secondAttribute="trailing" constant="30" id="I11-kV-Urd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="058-dU-nNn" secondAttribute="bottom" constant="80" id="NCN-Tp-bVp"/>
+                            <constraint firstItem="7Bb-mC-FOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="lQ3-Ur-uua"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
