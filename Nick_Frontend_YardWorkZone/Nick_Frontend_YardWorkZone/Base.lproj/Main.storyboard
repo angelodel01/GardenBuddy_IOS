@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nick_Frontend_YardWorkZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUf-YA-e7z">
+                                <rect key="frame" x="332" y="72" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1h-5T-Vxq">
+                                <rect key="frame" x="215" y="72" width="86" height="31"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
+                                <color key="textColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Diz-qV-koi">
+                                <rect key="frame" x="0.0" y="111" width="414" height="751"/>
+                                <color key="backgroundColor" red="0.2027071308" green="0.46863865939999999" blue="0.69471206610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pfp-eH-cYa">
+                                    <size key="itemSize" width="220" height="160"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ihw-96-fM4" customClass="CollectionViewCell" customModule="Nick_Frontend_YardWorkZone" customModuleProvider="target">
+                                        <rect key="frame" x="97" y="0.0" width="220" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lfE-P2-nen" customClass="CollectionViewCell" customModule="Nick_Frontend_YardWorkZone" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="220" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zone 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1O1-Fa-HDT">
+                                                    <rect key="frame" x="73.5" y="8" width="73" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="rhm-0E-Hlq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHc-Td-Kgp">
+                                                    <rect key="frame" x="61.5" y="55" width="97" height="50"/>
+                                                    <state key="normal" title="Toggle On/Off"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Status: Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yk-ch-YQL">
+                                                    <rect key="frame" x="49" y="129" width="122" height="23"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="xHc-Td-Kgp" firstAttribute="centerX" secondItem="0Yk-ch-YQL" secondAttribute="centerX" id="4Rf-Py-oEF"/>
+                                                <constraint firstItem="1O1-Fa-HDT" firstAttribute="centerX" secondItem="xHc-Td-Kgp" secondAttribute="centerX" id="J2N-Zr-2Ig"/>
+                                                <constraint firstItem="xHc-Td-Kgp" firstAttribute="top" secondItem="1O1-Fa-HDT" secondAttribute="bottom" constant="23" id="NPC-MT-G8j"/>
+                                                <constraint firstItem="xHc-Td-Kgp" firstAttribute="centerY" secondItem="lfE-P2-nen" secondAttribute="centerY" id="UhZ-b0-HYb"/>
+                                                <constraint firstItem="1O1-Fa-HDT" firstAttribute="centerX" secondItem="lfE-P2-nen" secondAttribute="centerX" id="Uwv-hH-hIz"/>
+                                                <constraint firstItem="1O1-Fa-HDT" firstAttribute="top" secondItem="lfE-P2-nen" secondAttribute="topMargin" id="bWM-Wg-ldI"/>
+                                                <constraint firstItem="0Yk-ch-YQL" firstAttribute="bottom" secondItem="lfE-P2-nen" secondAttribute="bottomMargin" id="bje-ps-PWR"/>
+                                                <constraint firstItem="0Yk-ch-YQL" firstAttribute="top" secondItem="xHc-Td-Kgp" secondAttribute="bottom" constant="24" id="hrx-rL-XlX"/>
+                                                <constraint firstItem="0Yk-ch-YQL" firstAttribute="leading" secondItem="lfE-P2-nen" secondAttribute="leading" constant="49" id="zvI-Yw-B3p"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="220" height="160"/>
+                                        <connections>
+                                            <outlet property="Label" destination="lfE-P2-nen" id="hwT-kD-MTo"/>
+                                            <outlet property="Status" destination="0Yk-ch-YQL" id="7Vw-w9-RV4"/>
+                                            <outlet property="Toggle" destination="xHc-Td-Kgp" id="gKp-aJ-yeq"/>
+                                            <outlet property="Zone1" destination="1O1-Fa-HDT" id="99G-b7-LZ9"/>
+                                            <outlet property="ZoneNumber" destination="1O1-Fa-HDT" id="lb7-HW-Ymz"/>
+                                            <outlet property="ZoneStatus" destination="0Yk-ch-YQL" id="HhV-5N-yIv"/>
+                                            <outlet property="ZoneToggle" destination="xHc-Td-Kgp" id="8VW-Qh-Q8b"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrQ-cl-ml6">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Sign In" width="123" id="0j8-6r-aMG" userLabel="Sign In Button">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" id="cL8-hN-TjV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4D5-07-9YE"/>
+                                    <barButtonItem title="Sign Out" id="S3n-fM-EHI" userLabel="Sign Out Button">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="signOutTapped:" destination="BYZ-38-t0r" id="pcV-Iv-QLm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20270713080263836" green="0.46863865944690386" blue="0.69471206610577974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h1h-5T-Vxq" secondAttribute="bottom" constant="759" id="3XX-WZ-YdE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fUf-YA-e7z" secondAttribute="trailing" constant="33" id="3i5-2f-K2z"/>
+                            <constraint firstItem="h1h-5T-Vxq" firstAttribute="top" secondItem="fUf-YA-e7z" secondAttribute="top" id="Ce6-Tq-oRo"/>
+                            <constraint firstItem="Diz-qV-koi" firstAttribute="top" secondItem="h1h-5T-Vxq" secondAttribute="bottom" constant="8" symbolic="YES" id="Kvs-C1-jQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Diz-qV-koi" secondAttribute="bottom" id="MlU-U5-lIb"/>
+                            <constraint firstItem="h1h-5T-Vxq" firstAttribute="centerY" secondItem="fUf-YA-e7z" secondAttribute="centerY" id="Qq0-fl-pHB"/>
+                            <constraint firstItem="h1h-5T-Vxq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="215" id="dOU-YR-TKt"/>
+                            <constraint firstItem="Diz-qV-koi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fz6-zY-tmy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Diz-qV-koi" secondAttribute="trailing" id="vp5-TJ-klP"/>
+                            <constraint firstItem="fUf-YA-e7z" firstAttribute="leading" secondItem="h1h-5T-Vxq" secondAttribute="trailing" constant="31" id="xLB-I2-XFU"/>
+                            <constraint firstItem="h1h-5T-Vxq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="zMh-TT-2fz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collection" destination="ihw-96-fM4" id="Qaz-qj-aMR"/>
+                        <outlet property="collectionview" destination="Diz-qV-koi" id="M0T-O1-s9a"/>
+                        <outlet property="signInButton" destination="0j8-6r-aMG" id="2El-eL-RKM"/>
+                        <outlet property="signOutButton" destination="S3n-fM-EHI" id="fwD-c6-2KD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+</document>
